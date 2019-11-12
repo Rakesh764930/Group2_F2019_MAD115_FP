@@ -15,9 +15,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5rE-H4-TZL">
-                                <rect key="frame" x="40" y="88" width="312" height="77"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5rE-H4-TZL">
+                                <rect key="frame" x="40" y="88" width="312" height="75"/>
                                 <attributedString key="attributedText">
                                     <fragment content="VEHICLE">
                                         <attributes>
@@ -33,20 +32,26 @@
                                 <rect key="frame" x="0.0" y="165" width="414" height="697"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="697" id="7VQ-mw-0X6"/>
-                                    <constraint firstAttribute="width" constant="414" id="muc-V7-fIa"/>
+                                    <constraint firstAttribute="height" constant="697" id="q6v-kp-CB7"/>
                                 </constraints>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="131" id="64p-1u-dbB">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="131"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="64p-1u-dbB" id="ak8-uo-dVL">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="131"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstAttribute="bottom" secondItem="N6U-7k-bwf" secondAttribute="bottom" id="AY4-AZ-uRn"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="N6U-7k-bwf" secondAttribute="bottom" id="Mwr-nV-bqr"/>
-                            <constraint firstItem="N6U-7k-bwf" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="ZOX-NV-zHs"/>
-                            <constraint firstAttribute="bottomMargin" secondItem="N6U-7k-bwf" secondAttribute="bottom" id="iAa-ak-cxt"/>
-                            <constraint firstAttribute="bottom" secondItem="N6U-7k-bwf" secondAttribute="bottom" constant="30" id="jBE-va-A5e"/>
-                            <constraint firstItem="N6U-7k-bwf" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="121" id="ocZ-vG-pNp"/>
-                            <constraint firstItem="N6U-7k-bwf" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="wg3-4r-fRd"/>
+                            <constraint firstItem="N6U-7k-bwf" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="BfX-ZU-fxh"/>
+                            <constraint firstItem="N6U-7k-bwf" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="MpJ-pK-QCb"/>
+                            <constraint firstItem="N6U-7k-bwf" firstAttribute="top" secondItem="5rE-H4-TZL" secondAttribute="bottom" id="b6i-eb-W7G"/>
+                            <constraint firstAttribute="trailing" secondItem="N6U-7k-bwf" secondAttribute="trailing" id="s8Q-3x-Ub3"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
