@@ -16,21 +16,38 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5rE-H4-TZL">
-                                <rect key="frame" x="43" y="87" width="312" height="79"/>
+                                <rect key="frame" x="40" y="88" width="312" height="77"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <attributedString key="attributedText">
                                     <fragment content="VEHICLE">
                                         <attributes>
                                             <color key="NSColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            <font key="NSFont" size="34" name=".SFNSDisplay"/>
+                                            <font key="NSFont" size="34" name="DINAlternate-Bold"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                         </attributes>
                                     </fragment>
                                 </attributedString>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="N6U-7k-bwf">
+                                <rect key="frame" x="0.0" y="165" width="414" height="697"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="697" id="7VQ-mw-0X6"/>
+                                    <constraint firstAttribute="width" constant="414" id="muc-V7-fIa"/>
+                                </constraints>
+                            </tableView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="N6U-7k-bwf" secondAttribute="bottom" id="AY4-AZ-uRn"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="N6U-7k-bwf" secondAttribute="bottom" id="Mwr-nV-bqr"/>
+                            <constraint firstItem="N6U-7k-bwf" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="ZOX-NV-zHs"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="N6U-7k-bwf" secondAttribute="bottom" id="iAa-ak-cxt"/>
+                            <constraint firstAttribute="bottom" secondItem="N6U-7k-bwf" secondAttribute="bottom" constant="30" id="jBE-va-A5e"/>
+                            <constraint firstItem="N6U-7k-bwf" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="121" id="ocZ-vG-pNp"/>
+                            <constraint firstItem="N6U-7k-bwf" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="wg3-4r-fRd"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
