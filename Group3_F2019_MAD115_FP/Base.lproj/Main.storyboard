@@ -73,39 +73,39 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </imageView>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter email or Username" minimumFontSize="20" translatesAutoresizingMaskIntoConstraints="NO" id="eoL-jt-GIQ">
-                                <rect key="frame" x="64" y="432" width="288" height="34"/>
+                                <rect key="frame" x="70" y="347" width="288" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Password" minimumFontSize="20" translatesAutoresizingMaskIntoConstraints="NO" id="aYm-Ug-eN2">
-                                <rect key="frame" x="63" y="471" width="291" height="34"/>
+                                <rect key="frame" x="71" y="388" width="291" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e6c-oh-I7P">
-                                <rect key="frame" x="57" y="562" width="315" height="60"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
-                                <state key="normal" title="Login">
-                                    <color key="titleColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                            </button>
-                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dbD-UL-cun">
-                                <rect key="frame" x="1" y="33" width="414" height="44"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            <navigationBar contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dbD-UL-cun">
+                                <rect key="frame" x="0.0" y="34" width="411" height="44"/>
                                 <items>
                                     <navigationItem title="Login Screen" largeTitleDisplayMode="always" id="rzI-oi-tcW">
                                         <barButtonItem key="backBarButtonItem" title="Logout" id="MwL-rM-UuL"/>
                                     </navigationItem>
                                 </items>
                             </navigationBar>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e6c-oh-I7P">
+                                <rect key="frame" x="43" y="480" width="315" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                <state key="normal" title="Login">
+                                    <color key="titleColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.76850851649375607" green="0.85089446280110481" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="Mwl-pv-ccB" firstAttribute="centerX" secondItem="3nc-ub-Md7" secondAttribute="centerX" id="Apf-bd-9aR"/>
                             <constraint firstItem="Mwl-pv-ccB" firstAttribute="top" secondItem="3nc-ub-Md7" secondAttribute="topMargin" constant="-12" id="OB4-uB-aJx"/>
+                            <constraint firstItem="Mwl-pv-ccB" firstAttribute="top" secondItem="dbD-UL-cun" secondAttribute="bottom" constant="46" id="gHb-lv-9qr"/>
                             <constraint firstItem="Mwl-pv-ccB" firstAttribute="leading" secondItem="9U5-xf-GZC" secondAttribute="leading" constant="1" id="kEM-sc-pbv"/>
                             <constraint firstItem="9U5-xf-GZC" firstAttribute="bottom" secondItem="Mwl-pv-ccB" secondAttribute="bottom" constant="620" id="pwI-o0-xFM"/>
                         </constraints>
