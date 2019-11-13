@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		9B02A0D9237B9A4500BDF44E /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B02A0D8237B9A4500BDF44E /* LoginViewController.swift */; };
-		9B02A0DB237B9B5800BDF44E /* Login.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9B02A0DA237B9B5800BDF44E /* Login.plist */; };
+		9B02A0DD237B9DBB00BDF44E /* eLogin.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9B02A0DC237B9DBB00BDF44E /* eLogin.plist */; };
 		9BC21CAD237A240700E3A8F7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BC21CAC237A240700E3A8F7 /* AppDelegate.swift */; };
 		9BC21CAF237A240700E3A8F7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BC21CAE237A240700E3A8F7 /* SceneDelegate.swift */; };
 		9BC21CB1237A240700E3A8F7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BC21CB0237A240700E3A8F7 /* ViewController.swift */; };
@@ -19,7 +19,7 @@
 
 /* Begin PBXFileReference section */
 		9B02A0D8237B9A4500BDF44E /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
-		9B02A0DA237B9B5800BDF44E /* Login.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Login.plist; sourceTree = "<group>"; };
+		9B02A0DC237B9DBB00BDF44E /* eLogin.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = eLogin.plist; sourceTree = "<group>"; };
 		9BC21CA9237A240700E3A8F7 /* Group3_F2019_MAD115_FP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Group3_F2019_MAD115_FP.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9BC21CAC237A240700E3A8F7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9BC21CAE237A240700E3A8F7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -68,7 +68,7 @@
 				9BC21CB5237A240800E3A8F7 /* Assets.xcassets */,
 				9BC21CB7237A240800E3A8F7 /* LaunchScreen.storyboard */,
 				9BC21CBA237A240800E3A8F7 /* Info.plist */,
-				9B02A0DA237B9B5800BDF44E /* Login.plist */,
+				9B02A0DC237B9DBB00BDF44E /* eLogin.plist */,
 			);
 			path = Group3_F2019_MAD115_FP;
 			sourceTree = "<group>";
@@ -131,9 +131,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9B02A0DD237B9DBB00BDF44E /* eLogin.plist in Resources */,
 				9BC21CB9237A240800E3A8F7 /* LaunchScreen.storyboard in Resources */,
 				9BC21CB6237A240800E3A8F7 /* Assets.xcassets in Resources */,
-				9B02A0DB237B9B5800BDF44E /* Login.plist in Resources */,
 				9BC21CB4237A240700E3A8F7 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

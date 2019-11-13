@@ -1,14 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
-<!--
-   Login.plist
-   Group3_F2019_MAD115_FP
-
-   Created by MacStudent on 2019-11-12.
-   Copyright (c) 2019 MacStudent. All rights reserved.
--->
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
-    <dict>
-    
-    </dict>
+<dict>
+	<key>New item</key>
+	<dict/>
+	<key>pswd</key>
+	<string>4141</string>
+	<key>New item - 2</key>
+	<dict/>
+	<key>usnm</key>
+	<string></string>
+	<key>New item - 4</key>
+	<string></string>
+</dict>
 </plist>
