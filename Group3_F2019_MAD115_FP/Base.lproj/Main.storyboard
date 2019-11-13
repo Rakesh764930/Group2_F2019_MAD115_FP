@@ -123,6 +123,7 @@
                         <viewLayoutGuide key="safeArea" id="9U5-xf-GZC"/>
                     </view>
                     <connections>
+                        <outlet property="swRemember" destination="QHL-Fo-Luj" id="Tq7-ma-0Qj"/>
                         <outlet property="txtPassword" destination="aYm-Ug-eN2" id="zEe-sQ-EoC"/>
                         <outlet property="txtUserName" destination="eoL-jt-GIQ" id="Ofa-0D-WpJ"/>
                     </connections>
