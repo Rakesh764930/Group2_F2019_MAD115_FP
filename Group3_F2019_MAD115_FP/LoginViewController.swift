@@ -15,12 +15,27 @@ class LoginViewController: UIViewController {
     @IBOutlet weak var swRemember: UISwitch!
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        swRemember.isOn=false
         // Do any additional setup after loading the view.
     }
     
     @IBAction func btnLogin(_ sender: UIButton) {
+        if readeLoginPlist()
+                    {
+                        if self.swRemember.isOn{
+                            
+                            UserDefaults.standard.set(txtUserName.text, forKey: "email")
+                            UserDefaults.standard.set(txtPassword.text, forKey: "pass")
+                        }else{
+                             
+                            UserDefaults.standard.removeObject(forKey: "userName")
+                            UserDefaults.standard.removeObject(forKey: "userPassword")
+                            }
+                     
+        
+        
+    
     }
     
 
-}
+
