@@ -31,9 +31,23 @@ class LoginViewController: UIViewController {
                             UserDefaults.standard.removeObject(forKey: "userName")
                             UserDefaults.standard.removeObject(forKey: "userPassword")
                             }
-                     
-                          
-        
+
+                                 let stbHome=UIStoryboard(name: "Main", bundle: nil)
+                                 let HomeVC = stbHome.instantiateViewController(withIdentifier: "HomeVC") as! HomeViewController
+                                        navigationController?.pushViewController(HomeVC, animated: true)
+                         }
+                             else{
+                                                      let alert = UIAlertController(title: "Invalid Username Or Password", message: "Please Enter Valid username or password", preferredStyle: .alert)
+
+                                                      alert.addAction(UIAlertAction(title: "Yes", style: .default, handler: nil))
+                                                      alert.addAction(UIAlertAction(title: "No", style: .cancel, handler: nil))
+                                                      
+                                                      self.present(alert, animated: true)
+                                                  }
+                                          }
+                                          
+                                               
+                             
         
     
     }
