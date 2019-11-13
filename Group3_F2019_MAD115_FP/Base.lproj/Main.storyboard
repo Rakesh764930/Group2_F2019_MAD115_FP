@@ -110,6 +110,9 @@
                                 <state key="normal" title="Login">
                                     <color key="titleColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="btnLogin:" destination="gPi-b3-eqb" eventType="touchUpInside" id="t9J-hE-Lra"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.76850851649375607" green="0.85089446280110481" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
