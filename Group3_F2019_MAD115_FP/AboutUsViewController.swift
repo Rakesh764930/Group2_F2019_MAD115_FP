@@ -23,5 +23,15 @@ class AboutUsViewController: UIViewController {
                    aboutWK.load(urlReq)
         }
     @IBAction func WkButton(_ sender: UIBarButtonItem) {
+        
+        switch sender.tag {
+            case 0:
+                if aboutWK.canGoForward{
+                    aboutWK.goForward()
+                }
+            
+            }
+        }
+        
     }
-}
+
