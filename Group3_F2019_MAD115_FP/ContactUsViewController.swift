@@ -7,7 +7,7 @@
 //
 
 import UIKit
-
+import MessageUI
 class ContactUsViewController: UIViewController {
 
     override func viewDidLoad() {
@@ -17,6 +17,9 @@ class ContactUsViewController: UIViewController {
     }
     
 
+    @IBAction func btnContactUs(_ sender: UIButton) {
+        
+        
     /*
     // MARK: - Navigation
 
@@ -27,4 +30,3 @@ class ContactUsViewController: UIViewController {
     }
     */
 
-}
