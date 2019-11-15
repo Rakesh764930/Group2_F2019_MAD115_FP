@@ -7,6 +7,30 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--Add Employee View Controller-->
+        <scene sceneID="pFm-Sm-1Ca">
+            <objects>
+                <viewController storyboardIdentifier="AddEmpVC" id="F0o-oW-HuU" customClass="AddEmployeeViewController" customModule="Group3_F2019_MAD115_FP" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="97w-w0-dDQ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="ADDEMP" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cyt-8c-7Zw">
+                                <rect key="frame" x="186" y="74" width="115" height="99"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="2RR-Sc-IFk"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tXt-bQ-Pzy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3209" y="136"/>
+        </scene>
         <!--Contact Us View Controller-->
         <scene sceneID="2gL-Xg-cfW">
             <objects>
@@ -14,18 +38,51 @@
                     <view key="view" contentMode="scaleToFill" id="bJo-u0-WlQ">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="CONTACT US" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S09-DB-Erw">
+                                <rect key="frame" x="106" y="77" width="115" height="99"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="hFf-Ed-g9C"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1Ix-AY-cY0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3814" y="143"/>
+            <point key="canvasLocation" x="3843" y="136"/>
+        </scene>
+        <!--About Us View Controller-->
+        <scene sceneID="Bot-cZ-lll">
+            <objects>
+                <viewController storyboardIdentifier="AboutVC" id="mhL-Ma-NWJ" customClass="AboutUsViewController" customModule="Group3_F2019_MAD115_FP" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="bMQ-P7-QfA">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="ABOUTUS" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P7x-wo-jYJ">
+                                <rect key="frame" x="165" y="81" width="115" height="99"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="aA1-Oo-12t"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jN9-HS-o0y" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4464" y="136"/>
         </scene>
         <!--Login Screen-->
         <scene sceneID="6VP-VT-Tq2">
             <objects>
-                <viewController id="gPi-b3-eqb" customClass="LoginViewController" customModule="Group3_F2019_MAD115_FP" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LogoutVC" id="gPi-b3-eqb" customClass="LoginViewController" customModule="Group3_F2019_MAD115_FP" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="3nc-ub-Md7">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -298,7 +355,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ebv-xX-7rK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2634.7826086956525" y="136.60714285714286"/>
+            <point key="canvasLocation" x="2557" y="136"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="dU5-5Z-RDB">
