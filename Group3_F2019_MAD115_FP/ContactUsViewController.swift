@@ -17,26 +17,29 @@ class ContactUsViewController: UIViewController {
     }
     
 
-    @IBAction func btnContactUs(_ sender: UIButton) {
+    @IBAction func btnContactUs(_ sender: UIButton)
+    {
         
         let alert = UIAlertController(title: "Contact Us",
-                                              message: "If you need help you can email us at \n help@Group3MADT.com \n +14379233497",
-                    preferredStyle: UIAlertController.Style.alert)
-                
-                let okAction = UIAlertAction(title: "Cancel",
-                                             style: .cancel, handler: nil)
-                
-                alert.addAction(okAction)
-                
-                let callAction = UIAlertAction(title: "Call Us",
-                                                   style: .default, handler: {
-                                                    _ in
-                                                    self.makeCall()
-                    })
-                    alert.addAction(callAction)
-                    
-                    
-                }
+                                      message: "If you need help you can email us at \n help@Group3MADT.com \n +14379233497",
+            preferredStyle: UIAlertController.Style.alert)
+        let okAction = UIAlertAction(title: "Cancel",
+                                     style: .cancel, handler: nil)
+        alert.addAction(okAction)
+        let callAction = UIAlertAction(title: "Call Us",
+                                           style: .default, handler: {
+                                            _ in
+                                            self.makeCall()
+            })
+            alert.addAction(callAction)
+            let smsAction = UIAlertAction(title: "Message Us",
+                                          style: .default, handler: {
+                                            _ in
+                                            self.sendSMS()
+            })
+            alert.addAction(smsAction)
+            self.present(alert, animated: true, completion: nil)
+        }
                 
                 private func makeCall()
                 {
