@@ -38,10 +38,13 @@ class HomeTableViewController: UITableViewController {
                        case 0:
 
                            let stbHome=UIStoryboard(name: "Main", bundle: nil)
-                           let NHomeVC = stbHome.instantiateViewController(withIdentifier: "NHomeVC") as! UIViewController
+                           let NHomeVC = stbHome.instantiateViewController(withIdentifier: "NHomeVC") as! ViewController
                                   navigationController?.pushViewController(NHomeVC, animated: true)
                        case 1:
-                           print("go to Add Customer")
+                          
+                           let stbHome=UIStoryboard(name: "Main", bundle: nil)
+                           let empVC = stbHome.instantiateViewController(withIdentifier: "empVC") as! ViewEmployeeViewController
+                                  navigationController?.pushViewController(empVC, animated: true)
                        default:
                        print("Switch-Default")
                        
