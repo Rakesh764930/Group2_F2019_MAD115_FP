@@ -238,7 +238,11 @@
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                                 <items>
                                     <barButtonItem systemItem="flexibleSpace" id="Jop-Ty-54U"/>
-                                    <barButtonItem title="Prev" id="HN0-V8-LO2"/>
+                                    <barButtonItem title="Prev" id="HN0-V8-LO2">
+                                        <connections>
+                                            <action selector="WkButton:" destination="mhL-Ma-NWJ" id="Ejv-px-V1j"/>
+                                        </connections>
+                                    </barButtonItem>
                                     <barButtonItem systemItem="flexibleSpace" id="oXk-nj-X5w"/>
                                     <barButtonItem title="Next" id="Q9L-5p-XcC"/>
                                     <barButtonItem systemItem="flexibleSpace" id="vp8-GJ-XeZ"/>
