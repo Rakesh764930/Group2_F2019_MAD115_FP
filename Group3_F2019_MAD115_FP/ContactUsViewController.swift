@@ -58,7 +58,7 @@ class ContactUsViewController: UIViewController {
         {
             let smsVC = MFMessageComposeViewController()
             smsVC.body = "Hello, How can I help You?"
-            smsVC.recipients = "+14379233497"
+            smsVC.recipients = ["+14379233497"]
             smsVC.messageComposeDelegate = self as? MFMessageComposeViewControllerDelegate
             self.present(smsVC, animated: false, completion: nil)
         }
