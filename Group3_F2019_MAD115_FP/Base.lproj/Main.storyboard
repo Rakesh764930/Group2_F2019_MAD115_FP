@@ -188,7 +188,7 @@
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="homepage" translatesAutoresizingMaskIntoConstraints="NO" id="Kzr-yN-16J">
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="employee1" translatesAutoresizingMaskIntoConstraints="NO" id="Kzr-yN-16J">
                                                     <rect key="frame" x="11" y="4" width="53" height="34"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 </imageView>
@@ -209,7 +209,7 @@
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="homepage" translatesAutoresizingMaskIntoConstraints="NO" id="4Fn-eD-Ald">
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="AddEmployee" translatesAutoresizingMaskIntoConstraints="NO" id="4Fn-eD-Ald">
                                                     <rect key="frame" x="12" y="0.0" width="53" height="34"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 </imageView>
@@ -312,7 +312,9 @@
         </scene>
     </scenes>
     <resources>
+        <image name="AddEmployee" width="512" height="512"/>
         <image name="employee" width="225" height="225"/>
+        <image name="employee1" width="512" height="512"/>
         <image name="homepage" width="512" height="512"/>
     </resources>
 </document>
