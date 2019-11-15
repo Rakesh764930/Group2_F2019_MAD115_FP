@@ -46,9 +46,9 @@ class ViewEmployeeViewController: UIViewController, UITableViewDelegate, UITable
 
             let vc = UIStoryboard(name: "Main", bundle: nil)
 
-            let EmpViewController = vc.instantiateViewController(withIdentifier: "BillViewController") as! BillViewController
-            BillViewController.c = sinObj.returnCustObj(custId: indexPath.row+1)
-        self.navigationController?.pushViewController(BillViewController, animated: true)
+            let EmpViewController = vc.instantiateViewController(withIdentifier: "employeeDetails") as! EmployeeDetailsViewController
+                EmpViewController.e = sinObj.returnEmpObj(empId: indexPath.row+1)
+            self.navigationController?.pushViewController(EmpViewController, animated: true)
 
     }
   

@@ -204,8 +204,8 @@
 				9B5D43F0237F2D630052DDFA /* AboutUsViewController.swift */,
 				9B5D43F2237F2D760052DDFA /* LogoutViewController.swift */,
 				9B4DD1EC237F547F00238902 /* Singleton.swift */,
-				9B4DD1EE237F570E00238902 /* Swift_Payroll_Project */,
 				9B4DD211237F5F8800238902 /* EmployeeDetailsViewController.swift */,
+				9B4DD1EE237F570E00238902 /* Swift_Payroll_Project */,
 			);
 			path = Group3_F2019_MAD115_FP;
 			sourceTree = "<group>";

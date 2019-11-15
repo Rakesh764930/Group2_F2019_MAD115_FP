@@ -421,10 +421,10 @@
             </objects>
             <point key="canvasLocation" x="2556.521739130435" y="135.9375"/>
         </scene>
-        <!--View Controller-->
+        <!--Employee Details View Controller-->
         <scene sceneID="L3D-V2-yGY">
             <objects>
-                <viewController id="2xX-OX-ilo" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="employeeDetails" id="2xX-OX-ilo" customClass="EmployeeDetailsViewController" customModule="Group3_F2019_MAD115_FP" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="MZI-qx-vEm">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

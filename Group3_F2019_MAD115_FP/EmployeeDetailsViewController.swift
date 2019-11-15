@@ -8,23 +8,15 @@
 
 import UIKit
 
-class EmployeeDetailsViewController: UIViewController,UITableViewDelegate,UITableViewDataSource {
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        <#code#>
-    }
-    
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        <#code#>
-    }
-    
+class EmployeeDetailsViewController: UIViewController {
+
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
     }
-    
-
+    var e : Employee?=nil
     /*
     // MARK: - Navigation
 
