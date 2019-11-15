@@ -17,5 +17,9 @@ class AboutUsViewController: UIViewController {
 
             //self.loadFromURL()        // Do any additional setup after loading the view.
         }
-        
+        func loadFromURL(){
+                    let url = URL(string: "https://www.lambtoncollege.ca/About_Us/Our_College/President/A_Message_from_President_Judith_Morris/")
+                    let urlReq = URLRequest(url: url!)
+                    aboutWK.load(urlReq)
+        }
 }
