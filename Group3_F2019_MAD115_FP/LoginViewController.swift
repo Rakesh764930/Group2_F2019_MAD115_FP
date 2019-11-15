@@ -36,7 +36,7 @@ class LoginViewController: UIViewController {
                             }
 
                                  let stbHome=UIStoryboard(name: "Main", bundle: nil)
-                                 let HomeVC = stbHome.instantiateViewController(withIdentifier: "HomeVC") as! HomeViewController
+                                 let HomeVC = stbHome.instantiateViewController(withIdentifier: "HomeVC") as! HomeTableViewController
                                         navigationController?.pushViewController(HomeVC, animated: true)
                          }
                              else{
