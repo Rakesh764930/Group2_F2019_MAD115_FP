@@ -31,9 +31,23 @@ class HomeTableViewController: UITableViewController {
         // #warning Incomplete implementation, return the number of rows
         return  section == 0 ? 6:6
     }
-//    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-//         
-//    }
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+
+                switch indexPath.row {
+                       case 0:
+
+                           let stbHome=UIStoryboard(name: "Main", bundle: nil)
+                           let NHomeVC = stbHome.instantiateViewController(withIdentifier: "NHomeVC") as! UIViewController
+                                  navigationController?.pushViewController(NHomeVC, animated: true)
+                       case 1:
+                           print("go to Add Customer")
+                       default:
+                       print("Switch-Default")
+                       
+         
+    }
+    }
     /*
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
