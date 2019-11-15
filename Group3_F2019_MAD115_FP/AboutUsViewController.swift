@@ -29,8 +29,12 @@ class AboutUsViewController: UIViewController {
                 if aboutWK.canGoForward{
                     aboutWK.goForward()
                 }
-            
-            }
+            case 1:
+                    aboutWK.goBack()
+            case 2:
+                aboutWK.reload()
+            default:
+                print("Nothing to do")            }
         }
         
     }
