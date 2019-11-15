@@ -11,6 +11,7 @@
 		9B02A0DD237B9DBB00BDF44E /* eLogin.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9B02A0DC237B9DBB00BDF44E /* eLogin.plist */; };
 		9B4FD165237E435200A055CF /* HomeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B4FD164237E435200A055CF /* HomeTableViewController.swift */; };
 		9B5BB1BE237F1B9D005F56F9 /* AboutUsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B5BB1BD237F1B9D005F56F9 /* AboutUsViewController.swift */; };
+		9B5BB1C0237F1C31005F56F9 /* ContactUsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B5BB1BF237F1C31005F56F9 /* ContactUsViewController.swift */; };
 		9BC21CAD237A240700E3A8F7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BC21CAC237A240700E3A8F7 /* AppDelegate.swift */; };
 		9BC21CAF237A240700E3A8F7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BC21CAE237A240700E3A8F7 /* SceneDelegate.swift */; };
 		9BC21CB1237A240700E3A8F7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BC21CB0237A240700E3A8F7 /* ViewController.swift */; };
@@ -24,6 +25,7 @@
 		9B02A0DC237B9DBB00BDF44E /* eLogin.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = eLogin.plist; sourceTree = "<group>"; };
 		9B4FD164237E435200A055CF /* HomeTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewController.swift; sourceTree = "<group>"; };
 		9B5BB1BD237F1B9D005F56F9 /* AboutUsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutUsViewController.swift; sourceTree = "<group>"; };
+		9B5BB1BF237F1C31005F56F9 /* ContactUsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactUsViewController.swift; sourceTree = "<group>"; };
 		9BC21CA9237A240700E3A8F7 /* Group3_F2019_MAD115_FP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Group3_F2019_MAD115_FP.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9BC21CAC237A240700E3A8F7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9BC21CAE237A240700E3A8F7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -75,6 +77,7 @@
 				9BC21CBA237A240800E3A8F7 /* Info.plist */,
 				9B02A0DC237B9DBB00BDF44E /* eLogin.plist */,
 				9B5BB1BD237F1B9D005F56F9 /* AboutUsViewController.swift */,
+				9B5BB1BF237F1C31005F56F9 /* ContactUsViewController.swift */,
 			);
 			path = Group3_F2019_MAD115_FP;
 			sourceTree = "<group>";
@@ -153,6 +156,7 @@
 			files = (
 				9B02A0D9237B9A4500BDF44E /* LoginViewController.swift in Sources */,
 				9BC21CB1237A240700E3A8F7 /* ViewController.swift in Sources */,
+				9B5BB1C0237F1C31005F56F9 /* ContactUsViewController.swift in Sources */,
 				9BC21CAD237A240700E3A8F7 /* AppDelegate.swift in Sources */,
 				9B4FD165237E435200A055CF /* HomeTableViewController.swift in Sources */,
 				9B5BB1BE237F1B9D005F56F9 /* AboutUsViewController.swift in Sources */,
