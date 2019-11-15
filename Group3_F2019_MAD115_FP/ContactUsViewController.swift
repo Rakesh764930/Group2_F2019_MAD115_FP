@@ -19,8 +19,17 @@ class ContactUsViewController: UIViewController {
 
     @IBAction func btnContactUs(_ sender: UIButton) {
         
-        
-    /*
+        let alert = UIAlertController(title: "Contact Us",
+                                              message: "If you need help you can email us at \n help@Group3MADT.com \n +14379233497",
+                    preferredStyle: UIAlertController.Style.alert)
+                
+                let okAction = UIAlertAction(title: "Cancel",
+                                             style: .cancel, handler: nil)
+                
+                alert.addAction(okAction)
+                
+                
+        }    /*
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
