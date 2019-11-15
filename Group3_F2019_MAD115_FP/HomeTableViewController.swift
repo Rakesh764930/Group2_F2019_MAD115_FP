@@ -10,7 +10,7 @@ import UIKit
 
 class HomeTableViewController: UITableViewController {
 
-    var menu[String]=["
+    var menu=["Home","View employee","Add Employee","Contact Us","About Us","Logout"]
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -25,11 +25,12 @@ class HomeTableViewController: UITableViewController {
 
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 0
+        return 1
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
+        let cell=
         return 0
     }
 
