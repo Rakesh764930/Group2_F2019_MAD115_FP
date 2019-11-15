@@ -45,8 +45,32 @@ class HomeTableViewController: UITableViewController {
                            let stbHome=UIStoryboard(name: "Main", bundle: nil)
                            let empVC = stbHome.instantiateViewController(withIdentifier: "empVC") as! ViewEmployeeViewController
                                   navigationController?.pushViewController(empVC, animated: true)
+                       case 2:
+                                       
+                                        let stbHome=UIStoryboard(name: "Main", bundle: nil)
+                                        let AddEmpVC = stbHome.instantiateViewController(withIdentifier: "AddEmpVC") as! AddEmployeeViewController
+                                               navigationController?.pushViewController(AddEmpVC, animated: true)
+
+                    case 3:
+                                    
+                                     let stbHome=UIStoryboard(name: "Main", bundle: nil)
+                                     let ContactVC = stbHome.instantiateViewController(withIdentifier: "ContactVC") as! ContactUsViewController
+                                            navigationController?.pushViewController(ContactVC, animated: true)
+                       case 4:
+                                                       
+                                                        let stbHome=UIStoryboard(name: "Main", bundle: nil)
+                                                        let AboutVC = stbHome.instantiateViewController(withIdentifier: "AboutVC") as! AboutUsViewController
+                                                               navigationController?.pushViewController(AboutVC, animated: true)
+                    
+
+                    case 5:
+                                    
+                                     let stbHome=UIStoryboard(name: "Main", bundle: nil)
+                                     let LogoutVC = stbHome.instantiateViewController(withIdentifier: "LogoutVC") as!LoginViewController
+                                            navigationController?.pushViewController(LogoutVC, animated: true)
+                    
                        default:
-                       print("Switch-Default")
+                       print("invalid click")
                        
          
     }
