@@ -218,7 +218,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <wkWebView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="REm-OK-p5F">
-                                <rect key="frame" x="0.0" y="91" width="414" height="749"/>
+                                <rect key="frame" x="0.0" y="91" width="414" height="727"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <wkWebViewConfiguration key="configuration">
@@ -233,6 +233,19 @@
                                     <navigationItem title="About Us" id="zDk-0B-swX"/>
                                 </items>
                             </navigationBar>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ELe-i0-Gm2">
+                                <rect key="frame" x="0.0" y="818" width="414" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <items>
+                                    <barButtonItem systemItem="flexibleSpace" id="Jop-Ty-54U"/>
+                                    <barButtonItem title="Prev" id="HN0-V8-LO2"/>
+                                    <barButtonItem systemItem="flexibleSpace" id="oXk-nj-X5w"/>
+                                    <barButtonItem title="Next" id="Q9L-5p-XcC"/>
+                                    <barButtonItem systemItem="flexibleSpace" id="vp8-GJ-XeZ"/>
+                                    <barButtonItem title="Refresh" id="OAS-Jg-4Vx"/>
+                                    <barButtonItem systemItem="flexibleSpace" id="8tm-2K-o9U"/>
+                                </items>
+                            </toolbar>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="aA1-Oo-12t"/>
