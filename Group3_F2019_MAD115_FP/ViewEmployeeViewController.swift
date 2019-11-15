@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewEmployeeViewController: UIViewController {
+class ViewEmployeeViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -16,15 +16,46 @@ class ViewEmployeeViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    var sinObj = Singleton.getInstance()
+    
+    
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        custTable.dataSource = self
+        custTable.delegate = self
+        sinObj.alreadyCustomer()
+        
     }
-    */
+    
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 1
+    }
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return sinObj.returnCount()
+    }
+
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let c = sinObj.returnCustObj(custId: Int(indexPath.row+1))
+        let cell = tableView.dequeueReusableCell(withIdentifier: "custCell", for: indexPath)
+        cell.textLabel?.text = c?.fullName
+        return cell
+    }
+
+    
+//    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+//
+//
+//
+//
+//            let vc = UIStoryboard(name: "Main", bundle: nil)
+//
+//            let BillViewController = vc.instantiateViewController(withIdentifier: "BillViewController") as! BillViewController
+//            BillViewController.c = sinObj.returnCustObj(custId: indexPath.row+1)
+//        self.navigationController?.pushViewController(BillViewController, animated: true)
+//
+//    }
+  
 
 }
