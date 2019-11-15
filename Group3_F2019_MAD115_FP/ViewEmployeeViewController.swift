@@ -12,21 +12,14 @@ class ViewEmployeeViewController: UIViewController, UITableViewDelegate, UITable
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        empTable.dataSource = self
+        empTable.delegate = self
+        sinObj.alreadyCustomer()
         // Do any additional setup after loading the view.
     }
     
     var sinObj = Singleton.getInstance()
     
-    
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        custTable.dataSource = self
-        custTable.delegate = self
-        sinObj.alreadyCustomer()
-        
-    }
     
     func numberOfSections(in tableView: UITableView) -> Int {
         return 1
