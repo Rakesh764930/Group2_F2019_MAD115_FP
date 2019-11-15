@@ -167,7 +167,7 @@
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="homepage" translatesAutoresizingMaskIntoConstraints="NO" id="ZVh-Ta-H1v">
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="newHome" translatesAutoresizingMaskIntoConstraints="NO" id="ZVh-Ta-H1v">
                                                     <rect key="frame" x="11" y="9" width="53" height="34"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 </imageView>
@@ -317,7 +317,7 @@
         <image name="data" width="512" height="512"/>
         <image name="employee" width="225" height="225"/>
         <image name="employee1" width="512" height="512"/>
-        <image name="homepage" width="512" height="512"/>
         <image name="logout" width="1067" height="1300"/>
+        <image name="newHome" width="1300" height="1300"/>
     </resources>
 </document>
