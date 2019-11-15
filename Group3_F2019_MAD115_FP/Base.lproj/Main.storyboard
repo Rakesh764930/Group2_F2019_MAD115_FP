@@ -230,7 +230,7 @@
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="homepage" translatesAutoresizingMaskIntoConstraints="NO" id="wUh-9W-0Wa">
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="call" translatesAutoresizingMaskIntoConstraints="NO" id="wUh-9W-0Wa">
                                                     <rect key="frame" x="10" y="-1" width="53" height="34"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 </imageView>
@@ -313,6 +313,7 @@
     </scenes>
     <resources>
         <image name="AddEmployee" width="512" height="512"/>
+        <image name="call" width="512" height="512"/>
         <image name="employee" width="225" height="225"/>
         <image name="employee1" width="512" height="512"/>
         <image name="homepage" width="512" height="512"/>
