@@ -67,8 +67,9 @@ class HomeTableViewController: UITableViewController {
                                     
                                      let stbHome=UIStoryboard(name: "Main", bundle: nil)
                                      let LogoutVC = stbHome.instantiateViewController(withIdentifier: "LogoutVC") as!LoginViewController
-                                            navigationController?.pushViewController(LogoutVC, animated: true)
                     
+                    
+                    navigationController?.popViewController(animated: true)
                        default:
                        print("invalid click")
                        
