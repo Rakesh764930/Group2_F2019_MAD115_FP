@@ -48,8 +48,7 @@ class Singleton: NSObject {
         p1.addVehicle(v: c2)
         
         addEmployeeToDictionary(e: f1)
-        
-        
+        addEmployeeToDictionary(e: p1)
     }
     
     //funtion to add customer
@@ -66,7 +65,7 @@ class Singleton: NSObject {
     }
     
     //Return Customer Object
-    func returnCustObj(empId:Int)->Employee?
+    func returnEmpObj(empId:Int)->Employee?
     {
         for(key,value) in empDict
         {

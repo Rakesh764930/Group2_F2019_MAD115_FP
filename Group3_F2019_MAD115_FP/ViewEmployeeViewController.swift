@@ -9,17 +9,19 @@
 import UIKit
 
 class ViewEmployeeViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        empTable.dataSource = self
-        empTable.delegate = self
-        sinObj.alreadyCustomer()
-        // Do any additional setup after loading the view.
-    }
+    @IBOutlet weak var empTable: UITableView!
+    
+  
     
     var sinObj = Singleton.getInstance()
     
+    override func viewDidLoad() {
+          super.viewDidLoad()
+          empTable.dataSource = self
+          empTable.delegate = self
+          sinObj.alreadyEmployee()
+          // Do any additional setup after loading the view.
+      }
     
     func numberOfSections(in tableView: UITableView) -> Int {
         return 1
@@ -30,25 +32,25 @@ class ViewEmployeeViewController: UIViewController, UITableViewDelegate, UITable
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let c = sinObj.returnCustObj(custId: Int(indexPath.row+1))
-        let cell = tableView.dequeueReusableCell(withIdentifier: "custCell", for: indexPath)
-        cell.textLabel?.text = c?.fullName
+        let e = sinObj.returnEmpObj(empId: Int(indexPath.row+1))
+        let cell = tableView.dequeueReusableCell(withIdentifier: "employeeCell", for: indexPath)
+        cell.textLabel?.text = e?.name
         return cell
     }
 
     
-//    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-//
-//
-//
-//
-//            let vc = UIStoryboard(name: "Main", bundle: nil)
-//
-//            let BillViewController = vc.instantiateViewController(withIdentifier: "BillViewController") as! BillViewController
-//            BillViewController.c = sinObj.returnCustObj(custId: indexPath.row+1)
-//        self.navigationController?.pushViewController(BillViewController, animated: true)
-//
-//    }
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+
+
+
+
+            let vc = UIStoryboard(name: "Main", bundle: nil)
+
+            let EmpViewController = vc.instantiateViewController(withIdentifier: "BillViewController") as! BillViewController
+            BillViewController.c = sinObj.returnCustObj(custId: indexPath.row+1)
+        self.navigationController?.pushViewController(BillViewController, animated: true)
+
+    }
   
 
 }
