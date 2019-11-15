@@ -35,7 +35,7 @@ class Singleton: NSObject {
     func alreadyEmployee() {
         // Employee 1
        
-        let f1 = FullTIme(id: 1, name: "Ajeet", age: 22, bonus: 250, salary: 25000,type: "FullTime")
+        let f1 = FullTIme(id: 1, name: "Ajeet Singh", age: 22, bonus: 250, salary: 25000,type: "FullTime")
         let c1 = Car(brand: "Ferrari", numberOfSeats: 2, make: 2019, plate: "LVE142",type: "Car")
         f1.addVehicle(v: c1)
         let m1 = Motorcycle(model: "Ducati", type: "Motorcycle", plate: "LFM421", make: 2019)
@@ -43,7 +43,7 @@ class Singleton: NSObject {
       
         // Customer 2
        
-        let p1 = FixedBasedPartTime(id: 2, fixedAmount: 500, rate: 10, hoursWorked: 40, name: "Rakesh", age: 22, type: "Fixed Based PartTime")
+        let p1 = FixedBasedPartTime(id: 2, fixedAmount: 500, rate: 10, hoursWorked: 40, name: "Rakesh Kumar", age: 22, type: "Fixed Based PartTime")
         let c2 = Car(brand: "Ferrari", numberOfSeats: 2, make: 2019, plate: "LVE142",type: "Car")
         p1.addVehicle(v: c2)
         
