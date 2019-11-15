@@ -51,7 +51,24 @@ class ContactUsViewController: UIViewController {
                         }
                     }
                 }
-                    }    /*
+    
+    private func sendSMS()
+    {
+        if MFMessageComposeViewController.canSendText()
+        {
+            let smsVC = MFMessageComposeViewController()
+            smsVC.body = "Hello, How can I help You?"
+            smsVC.recipients = "+14379233497"
+            smsVC.messageComposeDelegate = self as? MFMessageComposeViewControllerDelegate
+            self.present(smsVC, animated: false, completion: nil)
+        }
+        else
+        {
+            print("NO SIM available")
+        }
+    }
+            }
+                    /*
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
