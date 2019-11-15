@@ -1,5 +1,5 @@
 //
-//  HomeTableViewController.swift
+//  HOMETableViewController.swift
 //  Group3_F2019_MAD115_FP
 //
 //  Created by MacStudent on 2019-11-14.
@@ -10,7 +10,6 @@ import UIKit
 
 class HomeTableViewController: UITableViewController {
 
-    var menu=["Home","View employee","Add Employee","Contact Us","About Us","Logout"]
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -30,10 +29,11 @@ class HomeTableViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        let cell=
-        return 0
+        return  section == 0 ? 6:6
     }
-
+//    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+//         
+//    }
     /*
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
