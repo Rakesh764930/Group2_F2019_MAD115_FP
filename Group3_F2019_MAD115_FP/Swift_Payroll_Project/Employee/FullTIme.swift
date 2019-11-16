@@ -11,10 +11,17 @@ class FullTime:Employee{
     private var salary: Float
     private var bonus:Float
     var sinObj=Singleton.getInstance()
+    
+    init(id:Int, name: String, age: Int,bonus:Float,salary: Float,type:String) {
+        self.bonus=bonus
+        self.salary=salary
+        super.init(id: id, name:name,age:age, type: type)
+    }
+    
     init(name: String, age: Int,bonus:Float,salary: Float,type:String) {
         self.bonus=bonus
         self.salary=salary
-        var id = sinObj.empDict.count+1
+        let id = sinObj.empDict.count+1
         super.init(id: id, name:name,age:age, type: type)
     }
     override func printMyData() {
