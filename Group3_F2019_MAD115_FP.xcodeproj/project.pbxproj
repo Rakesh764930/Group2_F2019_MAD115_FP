@@ -24,6 +24,7 @@
 		9B4DD20F237F570E00238902 /* PartTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B4DD1FF237F570E00238902 /* PartTime.swift */; };
 		9B4DD210237F570E00238902 /* IDisplay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B4DD201237F570E00238902 /* IDisplay.swift */; };
 		9B4DD212237F5F8800238902 /* EmployeeDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B4DD211237F5F8800238902 /* EmployeeDetailsViewController.swift */; };
+		9B4DD214237F8F5E00238902 /* StringToInt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B4DD213237F8F5E00238902 /* StringToInt.swift */; };
 		9B4FD165237E435200A055CF /* HomeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B4FD164237E435200A055CF /* HomeTableViewController.swift */; };
 		9B5BB1C2237F4396005F56F9 /* payrollsystem.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9B5BB1C1237F4396005F56F9 /* payrollsystem.jpg */; };
 		9B5BB1C4237F44F1005F56F9 /* emp.png in Resources */ = {isa = PBXBuildFile; fileRef = 9B5BB1C3237F44F1005F56F9 /* emp.png */; };
@@ -70,6 +71,7 @@
 		9B4DD1FF237F570E00238902 /* PartTime.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PartTime.swift; sourceTree = "<group>"; };
 		9B4DD201237F570E00238902 /* IDisplay.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IDisplay.swift; sourceTree = "<group>"; };
 		9B4DD211237F5F8800238902 /* EmployeeDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeDetailsViewController.swift; sourceTree = "<group>"; };
+		9B4DD213237F8F5E00238902 /* StringToInt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringToInt.swift; sourceTree = "<group>"; };
 		9B4FD164237E435200A055CF /* HomeTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewController.swift; sourceTree = "<group>"; };
 		9B5BB1C1237F4396005F56F9 /* payrollsystem.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = payrollsystem.jpg; sourceTree = "<group>"; };
 		9B5BB1C3237F44F1005F56F9 /* emp.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = emp.png; sourceTree = "<group>"; };
@@ -205,6 +207,7 @@
 				9B5D43F2237F2D760052DDFA /* LogoutViewController.swift */,
 				9B4DD1EC237F547F00238902 /* Singleton.swift */,
 				9B4DD211237F5F8800238902 /* EmployeeDetailsViewController.swift */,
+				9B4DD213237F8F5E00238902 /* StringToInt.swift */,
 				9B4DD1EE237F570E00238902 /* Swift_Payroll_Project */,
 			);
 			path = Group3_F2019_MAD115_FP;
@@ -288,6 +291,7 @@
 			files = (
 				9B4DD20B237F570E00238902 /* CommissionBasedPartTime.swift in Sources */,
 				9B4DD203237F570E00238902 /* Vehicle.swift in Sources */,
+				9B4DD214237F8F5E00238902 /* StringToInt.swift in Sources */,
 				9B02A0D9237B9A4500BDF44E /* LoginViewController.swift in Sources */,
 				9B4DD212237F5F8800238902 /* EmployeeDetailsViewController.swift in Sources */,
 				9B5D43F1237F2D630052DDFA /* AboutUsViewController.swift in Sources */,

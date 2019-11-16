@@ -7,13 +7,14 @@
 //
 
 import Foundation
-class FullTIme:Employee{
+class FullTime:Employee{
     private var salary: Float
     private var bonus:Float
-    init(id:Int,name: String, age: Int,bonus:Float,salary: Float,type:String) {
+    var sinObj=Singleton.getInstance()
+    init(name: String, age: Int,bonus:Float,salary: Float,type:String) {
         self.bonus=bonus
         self.salary=salary
-        
+        var id = sinObj.empDict.count+1
         super.init(id: id, name:name,age:age, type: type)
     }
     override func printMyData() {
