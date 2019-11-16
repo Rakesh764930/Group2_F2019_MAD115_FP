@@ -108,12 +108,30 @@ class AddEmployeeViewController: UIViewController {
             let empAge = age.text
             let empBonus = txt2.text
             let empSalary = txt1.text
-            if(firstName != nil && lastName != nil && empAge != nil && empBonus != nil && empSalary != nil)
+            if(firstName == nil || lastName == nil || empAge == nil || empBonus == nil || empSalary == nil)
             {
-            let fullTimeEmployee=FullTime(name:(firstName.text!+" "+lastName.text!), age: (empAge?.stringToInt())!,bonus: (empBonus?.stringToFloat())!,salary: (empSalary?.stringToFloat())!,type:empType)
-            sinObj.addEmployeeToDictionary(e: fullTimeEmployee)
+                let alert = UIAlertController(title: "Empty Field", message: "Please Fill all th details", preferredStyle: .alert)
+                
+                alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+                
+                self.present(alert, animated: true)
+                
+            
             }
             else{
+                let fullTimeEmployee=FullTime(name:(firstName.text!+" "+lastName.text!), age: (empAge?.stringToInt())!,bonus: (empBonus?.stringToFloat())!,salary: (empSalary?.stringToFloat())!,type:empType)
+                sinObj.addEmployeeToDictionary(e: fullTimeEmployee)
+                    let stbHome=UIStoryboard(name: "Main", bundle: nil)
+                    let HomeVC = stbHome.instantiateViewController(withIdentifier: "HomeVC") as! HomeTableViewController
+                    navigationController?.pushViewController(HomeVC, animated: true)
+                
+                
+            }
+        }
+        if empType.elementsEqual("Intern"){
+            let empAge = age.text
+            if(firstName == nil || lastName == nil || empAge == nil)
+            {
                 
                 let alert = UIAlertController(title: "Empty Field", message: "Please Fill all th details", preferredStyle: .alert)
                 
@@ -121,21 +139,17 @@ class AddEmployeeViewController: UIViewController {
                 
                 self.present(alert, animated: true)
                 
-            }
-        }
-        if empType.elementsEqual("Intern"){
-            let empAge = age.text
-            if(firstName != nil && lastName != nil && empAge != nil)
-            {
-            let internEmployee=Intern(name: (firstName.text!+" "+lastName.text!), age: (empAge?.stringToInt())!, schoolName: txt1.text!, type: empType)
-            sinObj.addEmployeeToDictionary(e: internEmployee)
+            
             }
             else{
-                let alert = UIAlertController(title: "Empty Field", message: "Please Fill all th details", preferredStyle: .alert)
                 
-                alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
-                
-                self.present(alert, animated: true)            }
+                let internEmployee=Intern(name: (firstName.text!+" "+lastName.text!), age: (empAge?.stringToInt())!, schoolName: txt1.text!, type: empType)
+                sinObj.addEmployeeToDictionary(e: internEmployee)
+                    
+                    let stbHome=UIStoryboard(name: "Main", bundle: nil)
+                    let HomeVC = stbHome.instantiateViewController(withIdentifier: "HomeVC") as! HomeTableViewController
+                    navigationController?.pushViewController(HomeVC, animated: true)
+            }
         }
         
         if empType.elementsEqual("FixedBasedPartTime"){
@@ -144,21 +158,24 @@ class AddEmployeeViewController: UIViewController {
             let fixAmt = txt3.text
             let rate = txt1.text
             let hours = txt2.text
-            if(firstName != nil && lastName != nil && empAge != nil && fixAmt != nil && rate != nil && hours != nil)
+            if(firstName == nil || lastName == nil || empAge == nil || fixAmt == nil || rate == nil || hours == nil)
             {
-                let fixedBasedEmployee=FixedBasedPartTime(fixedAmount: (fixAmt?.stringToFloat())!, rate: (rate?.stringToFloat())!, hoursWorked: (hours?.stringToFloat())!, name: (firstName.text!+" "+lastName.text!), age: (empAge?.stringToInt())!, type: empType)
-            sinObj.addEmployeeToDictionary(e: fixedBasedEmployee)
+                let alert = UIAlertController(title: "Empty Field", message: "Please Fill all th details", preferredStyle: .alert)
+                                  
+                 alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+                                  
+                self.present(alert, animated: true)
+                
             }
             else{
-                let alert = UIAlertController(title: "Empty Field", message: "Please Fill all th details", preferredStyle: .alert)
-                               
-                               alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
-                               
-                               self.present(alert, animated: true)
+                    let fixedBasedEmployee=FixedBasedPartTime(fixedAmount: (fixAmt?.stringToFloat())!, rate: (rate?.stringToFloat())!, hoursWorked: (hours?.stringToFloat())!, name: (firstName.text!+" "+lastName.text!), age: (empAge?.stringToInt())!, type: empType)
+                sinObj.addEmployeeToDictionary(e: fixedBasedEmployee)
+                    let stbHome=UIStoryboard(name: "Main", bundle: nil)
+                    let HomeVC = stbHome.instantiateViewController(withIdentifier: "HomeVC") as! HomeTableViewController
+                    navigationController?.pushViewController(HomeVC, animated: true)
+
             }
-            let stbHome=UIStoryboard(name: "Main", bundle: nil)
-            let HomeVC = stbHome.instantiateViewController(withIdentifier: "HomeVC") as! HomeTableViewController
-            navigationController?.pushViewController(HomeVC, animated: true)
+            
         }
     }
 }
