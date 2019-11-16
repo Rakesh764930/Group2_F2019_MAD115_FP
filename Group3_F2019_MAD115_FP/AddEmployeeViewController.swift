@@ -10,6 +10,21 @@ import UIKit
 
 class AddEmployeeViewController: UIViewController {
 
+    @IBOutlet weak var lbl_1: UILabel!
+    @IBOutlet weak var lbl_2: UILabel!
+    @IBOutlet weak var lbl_3: UILabel!
+    @IBOutlet weak var lbl_4: UILabel!
+    @IBOutlet weak var lbl_5: UILabel!
+    
+    
+    @IBOutlet weak var txt1: UITextField!
+    @IBOutlet weak var txt2: UITextField!
+    @IBOutlet weak var txt3: UITextField!
+    @IBOutlet weak var txt4: UITextField!
+    @IBOutlet weak var txt5: UITextField!
+    
+    
+    @IBOutlet weak var segmentPartTime: UISegmentedControl!
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -17,5 +32,19 @@ class AddEmployeeViewController: UIViewController {
     }
     var sinObj=Singleton.getInstance()
             
-
+    @IBOutlet weak var segmentControl: UISegmentedControl!
+    @IBAction func typeSegment(_ sender: Any) {
+        
+        switch segmentControl.selectedSegmentIndex
+        {
+            case 0:
+                lbl_1.isHidden = false
+                lbl_2.isHidden = false
+                txt1.isHidden = false
+                txt2.isHidden = false
+            
+        
+    }
+    
+}
 }

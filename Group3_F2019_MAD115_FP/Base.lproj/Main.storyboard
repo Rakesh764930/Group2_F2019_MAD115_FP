@@ -51,6 +51,9 @@
                                     <segment title="Intern"/>
                                     <segment title="Part Time"/>
                                 </segments>
+                                <connections>
+                                    <action selector="typeSegment:" destination="F0o-oW-HuU" eventType="valueChanged" id="Jap-2M-rSu"/>
+                                </connections>
                             </segmentedControl>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="R5s-kV-YQU">
                                 <rect key="frame" x="164" y="123" width="217" height="34"/>
@@ -156,6 +159,20 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="2RR-Sc-IFk"/>
                     </view>
+                    <connections>
+                        <outlet property="lbl_1" destination="vcM-S4-aqf" id="LTG-RU-X1d"/>
+                        <outlet property="lbl_2" destination="rAR-Hs-RAu" id="bVP-4C-D1t"/>
+                        <outlet property="lbl_3" destination="k23-01-QC7" id="kBV-3A-63N"/>
+                        <outlet property="lbl_4" destination="vIi-4R-26W" id="312-cY-WRq"/>
+                        <outlet property="lbl_5" destination="vIi-4R-26W" id="c06-ro-z6R"/>
+                        <outlet property="segmentControl" destination="319-0e-4ya" id="OF6-ux-5xh"/>
+                        <outlet property="segmentPartTime" destination="k7t-Qn-cgh" id="A2h-8b-xje"/>
+                        <outlet property="txt1" destination="uIe-EI-6nc" id="bBz-2K-pwb"/>
+                        <outlet property="txt2" destination="yp9-oc-9FV" id="Dpa-0f-nlf"/>
+                        <outlet property="txt3" destination="wnS-3s-YSI" id="1Aw-Zc-Fp6"/>
+                        <outlet property="txt4" destination="bAa-8e-7Cd" id="BDN-3e-Ejl"/>
+                        <outlet property="txt5" destination="9AI-ab-0Xf" id="LNL-n3-WdZ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tXt-bQ-Pzy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
