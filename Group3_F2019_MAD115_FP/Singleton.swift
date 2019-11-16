@@ -52,13 +52,15 @@ class Singleton: NSObject {
     }
     
     //funtion to add customer
-    func addEmployee(firstname:String, lastname:String, age:Int, type: String)
-    {
-        let cId = empDict.count+1
-        let e = Employee(id: cId, name: (firstname+" "+lastname), age: age, type: type)
-        addEmployeeToDictionary(e: e)
-        
-    }
+//    func addEmployeeFullTime(firstname:String, lastname:String, age:Int, type: String)
+//    {
+//        let cId = empDict.count+1
+////      
+//        let empType = type
+//        if empType.elementsEqual("FullTime"){}
+//        addEmployeeToDictionary(e: e)
+//        
+//    }
     
     func returnCount() -> Int {
         return empDict.count
