@@ -9,9 +9,10 @@
 import Foundation
 class Intern:Employee {
     private var schoolName:String
-    
-    init(id:Int,name:String,age:Int,schoolName:String,type:String) throws {
+    var sinObj=Singleton.getInstance()
+    init(name:String,age:Int,schoolName:String,type:String) {
         self.schoolName=schoolName
+        let id=sinObj.empDict.count+1
         super.init(id: id, name:name,age:age,type:type)
     
     }

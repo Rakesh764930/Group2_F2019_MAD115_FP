@@ -107,6 +107,19 @@ class AddEmployeeViewController: UIViewController {
             let empBonus = txt2.text
             let empSalary = txt1.text
             let fullTimeEmployee=FullTime(name:(firstName.text!+" "+lastName.text!), age: (empAge?.stringToInt())!,bonus: (empBonus?.stringToFloat())!,salary: (empSalary?.stringToFloat())!,type:empType)
+            sinObj.addEmployeeToDictionary(e: fullTimeEmployee)
+            
         }
+        if empType.elementsEqual("Intern"){
+            let empAge = age.text
+            let empSalary = txt1.text
+            let internEmployee=Intern(name: (firstName.text!+" "+lastName.text!), age: (empAge?.stringToInt())!, schoolName: txt1.text!, type: empType)
+            sinObj.addEmployeeToDictionary(e: internEmployee)
+        }
+        if empType.elementsEqual("FixedBasedPartTime"){
+            let empAge = age.text
+            let empBonus = txt2.text
+            let empSalary = txt1.text
+            let fixedBasedEmployee=FixedBasedPartTime(id: <#T##Int#>, fixedAmount: <#T##Float#>, rate: <#T##Float#>, hoursWorked: <#T##Float#>, name: <#T##String#>, age: <#T##Int#>, type: <#T##String#>)        }
     }
 }
