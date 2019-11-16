@@ -112,7 +112,6 @@ class AddEmployeeViewController: UIViewController {
         }
         if empType.elementsEqual("Intern"){
             let empAge = age.text
-            let empSalary = txt1.text
             let internEmployee=Intern(name: (firstName.text!+" "+lastName.text!), age: (empAge?.stringToInt())!, schoolName: txt1.text!, type: empType)
             sinObj.addEmployeeToDictionary(e: internEmployee)
         }
@@ -121,6 +120,9 @@ class AddEmployeeViewController: UIViewController {
             let fixAmt = txt3.text
             let rate = txt1.text
             let hours = txt2.text
-            let fixedBasedEmployee=FixedBasedPartTime(fixedAmount: (fixAmt?.stringToFloat())!, rate: (rate?.stringToFloat())!, hoursWorked: (hours?.stringToFloat())!, name: em, age: <#T##Int#>, type: <#T##String#>)        }
+            let fixedBasedEmployee=FixedBasedPartTime(fixedAmount: (fixAmt?.stringToFloat())!, rate: (rate?.stringToFloat())!, hoursWorked: (hours?.stringToFloat())!, name: (firstName.text!+" "+lastName.text!), age: (empAge?.stringToInt())!, type: empType)
+            sinObj.addEmployeeToDictionary(e: fixedBasedEmployee)
+            
+        }
     }
 }
