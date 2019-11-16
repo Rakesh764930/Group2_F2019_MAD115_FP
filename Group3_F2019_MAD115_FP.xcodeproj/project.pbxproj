@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9B0034382380AD8100CB2E0E /* EmployeeNameTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B0034372380AD8100CB2E0E /* EmployeeNameTableViewCell.swift */; };
 		9B02A0D9237B9A4500BDF44E /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B02A0D8237B9A4500BDF44E /* LoginViewController.swift */; };
 		9B02A0DD237B9DBB00BDF44E /* eLogin.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9B02A0DC237B9DBB00BDF44E /* eLogin.plist */; };
 		9B4DD1ED237F547F00238902 /* Singleton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B4DD1EC237F547F00238902 /* Singleton.swift */; };
@@ -54,6 +55,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		9B0034372380AD8100CB2E0E /* EmployeeNameTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeNameTableViewCell.swift; sourceTree = "<group>"; };
 		9B02A0D8237B9A4500BDF44E /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		9B02A0DC237B9DBB00BDF44E /* eLogin.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = eLogin.plist; sourceTree = "<group>"; };
 		9B4DD1EC237F547F00238902 /* Singleton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Singleton.swift; sourceTree = "<group>"; };
@@ -209,6 +211,7 @@
 				9B4DD211237F5F8800238902 /* EmployeeDetailsViewController.swift */,
 				9B4DD213237F8F5E00238902 /* StringToInt.swift */,
 				9B4DD1EE237F570E00238902 /* Swift_Payroll_Project */,
+				9B0034372380AD8100CB2E0E /* EmployeeNameTableViewCell.swift */,
 			);
 			path = Group3_F2019_MAD115_FP;
 			sourceTree = "<group>";
@@ -309,6 +312,7 @@
 				9B5D43EF237F2D480052DDFA /* ContactUsViewController.swift in Sources */,
 				9BC21CAD237A240700E3A8F7 /* AppDelegate.swift in Sources */,
 				9B4FD165237E435200A055CF /* HomeTableViewController.swift in Sources */,
+				9B0034382380AD8100CB2E0E /* EmployeeNameTableViewCell.swift in Sources */,
 				9B5D43EB237F2A080052DDFA /* ViewEmployeeViewController.swift in Sources */,
 				9B5D43F3237F2D760052DDFA /* LogoutViewController.swift in Sources */,
 				9BC21CAF237A240700E3A8F7 /* SceneDelegate.swift in Sources */,
