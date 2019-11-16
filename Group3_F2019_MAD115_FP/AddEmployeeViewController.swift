@@ -103,8 +103,10 @@ class AddEmployeeViewController: UIViewController {
     @IBAction func saveEmployeeBtn(_ sender: Any) {
         
         if empType.elementsEqual("FullTime"){
-            var empAge = age.text
-            let fullTimeEmployee=FullTime(name:(firstName.text!+" "+lastName.text!), age: (empAge?.stringToInt())!,bonus:txt2!,salary: txt1.text,type:empType)
+            let empAge = age.text
+            let empBonus = txt2.text
+            let empSalary = txt1.text
+            let fullTimeEmployee=FullTime(name:(firstName.text!+" "+lastName.text!), age: (empAge?.stringToInt())!,bonus: (empBonus?.stringToFloat())!,salary: (empSalary?.stringToFloat())!,type:empType)
         }
     }
 }
