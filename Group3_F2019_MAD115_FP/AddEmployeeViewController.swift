@@ -104,7 +104,7 @@ class AddEmployeeViewController: UIViewController {
         
         if empType.elementsEqual("FullTime"){
             var empAge = age.text
-            let fullTimeEmployee=FullTime(name:(firstName.text!+" "+lastName.text!), age: (empAge?.stringToInt())!,bonus:txt2!.text,salary: txt1.text,type:empType)
+            let fullTimeEmployee=FullTime(name:(firstName.text!+" "+lastName.text!), age: (empAge?.stringToInt())!,bonus:txt2!,salary: txt1.text,type:empType)
         }
     }
 }
