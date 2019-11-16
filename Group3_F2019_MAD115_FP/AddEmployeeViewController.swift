@@ -57,7 +57,13 @@ class AddEmployeeViewController: UIViewController {
                               {
                               case 0:
                                   lbl_1.isHidden = false
-                           
+                           lbl_2.isHidden = false
+                                                      txt1.isHidden = false
+                                                      txt2.isHidden = false
+                                                      
+                                                      lbl_1.text = "Commission Perc"
+                                                      lbl_2.text = "Hours Worked"
+                                     
     
 }
 }
