@@ -49,7 +49,15 @@ class AddEmployeeViewController: UIViewController {
                 lbl_1.isHidden = false
                 txt1.isHidden = false
             
-               
+               lbl_1.text = "School Name"
+                          
+                          case 2:
+                              segmentPartTime.isHidden = false
+                              switch segmentPartTime.selectedSegmentIndex
+                              {
+                              case 0:
+                                  lbl_1.isHidden = false
+                           
     
 }
 }
