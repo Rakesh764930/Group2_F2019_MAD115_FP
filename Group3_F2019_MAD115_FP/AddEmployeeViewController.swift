@@ -51,19 +51,34 @@ class AddEmployeeViewController: UIViewController {
             
                lbl_1.text = "School Name"
                           
-                          case 2:
-                              segmentPartTime.isHidden = false
-                              switch segmentPartTime.selectedSegmentIndex
-                              {
-                              case 0:
-                                  lbl_1.isHidden = false
-                           lbl_2.isHidden = false
-                                                      txt1.isHidden = false
-                                                      txt2.isHidden = false
+            case 2:
+                segmentPartTime.isHidden = false
+                switch segmentPartTime.selectedSegmentIndex
+                {
+                case 0:
+                    lbl_1.isHidden = false
+                    lbl_2.isHidden = false
+                    txt1.isHidden = false
+                    txt2.isHidden = false
                                                       
-                                                      lbl_1.text = "Commission Perc"
-                                                      lbl_2.text = "Hours Worked"
-                                     
+                    lbl_1.text = "Commission Perc"
+                    lbl_2.text = "Hours Worked"
+                case 1:
+                    lbl_1.isHidden = false
+                    lbl_2.isHidden = false
+                    lbl_3.isHidden = false
+                                                                              
+                    lbl_1.text = "Rate"
+                    lbl_2.text = "Hours Worked"
+                    lbl_3.text = "Fixed Amount"
+                default:
+                    break
+                }
+
+                default:
+                    break
+                                                                  
+        }
     
 }
 }
