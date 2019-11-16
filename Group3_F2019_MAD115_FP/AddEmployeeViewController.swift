@@ -118,8 +118,9 @@ class AddEmployeeViewController: UIViewController {
         }
         if empType.elementsEqual("FixedBasedPartTime"){
             let empAge = age.text
-            let empBonus = txt2.text
-            let empSalary = txt1.text
-            let fixedBasedEmployee=FixedBasedPartTime(id: <#T##Int#>, fixedAmount: <#T##Float#>, rate: <#T##Float#>, hoursWorked: <#T##Float#>, name: <#T##String#>, age: <#T##Int#>, type: <#T##String#>)        }
+            let fixAmt = txt3.text
+            let rate = txt1.text
+            let hours = txt2.text
+            let fixedBasedEmployee=FixedBasedPartTime(fixedAmount: (fixAmt?.stringToFloat())!, rate: rate, hoursWorked: <#T##Float#>, name: <#T##String#>, age: <#T##Int#>, type: <#T##String#>)        }
     }
 }
