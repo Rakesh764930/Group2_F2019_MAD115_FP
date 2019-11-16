@@ -121,6 +121,6 @@ class AddEmployeeViewController: UIViewController {
             let fixAmt = txt3.text
             let rate = txt1.text
             let hours = txt2.text
-            let fixedBasedEmployee=FixedBasedPartTime(fixedAmount: (fixAmt?.stringToFloat())!, rate: rate, hoursWorked: <#T##Float#>, name: <#T##String#>, age: <#T##Int#>, type: <#T##String#>)        }
+            let fixedBasedEmployee=FixedBasedPartTime(fixedAmount: (fixAmt?.stringToFloat())!, rate: (rate?.stringToFloat())!, hoursWorked: (hours?.stringToFloat())!, name: em, age: <#T##Int#>, type: <#T##String#>)        }
     }
 }
