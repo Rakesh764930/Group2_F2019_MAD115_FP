@@ -43,8 +43,13 @@ class AddEmployeeViewController: UIViewController {
                 txt1.isHidden = false
                 txt2.isHidden = false
             
-        
-    }
+                lbl_1.text = "Salary"
+                lbl_2.text = "Bonus"
+            case 1:
+                lbl_1.isHidden = false
+                txt1.isHidden = false
+            
+               
     
 }
 }
