@@ -237,7 +237,6 @@
                                 <rect key="frame" x="0.0" y="818" width="414" height="44"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                                 <items>
-                                    <barButtonItem systemItem="flexibleSpace" id="Jop-Ty-54U"/>
                                     <barButtonItem tag="1" title="Prev" id="HN0-V8-LO2">
                                         <connections>
                                             <action selector="WkButton:" destination="mhL-Ma-NWJ" id="Ejv-px-V1j"/>
@@ -247,7 +246,6 @@
                                     <barButtonItem title="Next" id="Q9L-5p-XcC"/>
                                     <barButtonItem systemItem="flexibleSpace" id="vp8-GJ-XeZ"/>
                                     <barButtonItem tag="2" title="Refresh" id="OAS-Jg-4Vx"/>
-                                    <barButtonItem systemItem="flexibleSpace" id="8tm-2K-o9U"/>
                                 </items>
                             </toolbar>
                         </subviews>

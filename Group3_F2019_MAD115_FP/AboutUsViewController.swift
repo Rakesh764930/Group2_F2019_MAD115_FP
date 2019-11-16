@@ -15,7 +15,7 @@ class AboutUsViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-            //self.loadFromURL()        // Do any additional setup after loading the view.
+            self.loadFromURL()        // Do any additional setup after loading the view.
         }
         func loadFromURL(){
                     let url = URL(string: "https://www.lambtoncollege.ca/About_Us/Our_College/President/A_Message_from_President_Judith_Morris/")
@@ -34,7 +34,8 @@ class AboutUsViewController: UIViewController {
             case 2:
                 aboutWK.reload()
             default:
-                print("Nothing to do")            }
+                print("Nothing to do")
+            }
         }
         
     }
