@@ -19,7 +19,6 @@ class Employee:IDisplay{
     
     init(id:Int,name:String,age:Int,type:String) {
         
-        
         self.name=name
         self.age=age
         self.type=type

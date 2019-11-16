@@ -32,12 +32,15 @@ class ViewEmployeeViewController: UIViewController, UITableViewDelegate, UITable
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
         let e = sinObj.returnEmpObj(empId: Int(indexPath.row+1))
         let cell = tableView.dequeueReusableCell(withIdentifier: "employeeCell", for: indexPath) as! EmployeeNameTableViewCell
         cell.employeeName.text = e?.name
         cell.employeeType.text = e?.type
-        
+        let earn = e?.calcEarnings()
+        cell.empTotal.text = earn?.floatToStr()
         return cell
+        
     }
 
     
