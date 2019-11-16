@@ -12,4 +12,8 @@ extension String{
     {
         return Int(self)!
     }
+    func stringToFloat() -> Float
+    {
+        return Float(self)!
+    }
 }
