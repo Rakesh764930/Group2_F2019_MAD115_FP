@@ -33,8 +33,10 @@ class ViewEmployeeViewController: UIViewController, UITableViewDelegate, UITable
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let e = sinObj.returnEmpObj(empId: Int(indexPath.row+1))
-        let cell = tableView.dequeueReusableCell(withIdentifier: "employeeCell", for: indexPath)
-        cell.textLabel?.text = e?.name
+        let cell = tableView.dequeueReusableCell(withIdentifier: "employeeCell", for: indexPath) as! EmployeeNameTableViewCell
+        cell.employeeName.text = e?.name
+        cell.employeeType.text = e?.type
+        
         return cell
     }
 
@@ -51,6 +53,8 @@ class ViewEmployeeViewController: UIViewController, UITableViewDelegate, UITable
             self.navigationController?.pushViewController(EmpViewController, animated: true)
 
     }
-  
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 80
+    }
 
 }

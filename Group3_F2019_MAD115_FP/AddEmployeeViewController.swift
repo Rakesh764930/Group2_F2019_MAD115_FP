@@ -102,27 +102,63 @@ class AddEmployeeViewController: UIViewController {
     }
     @IBAction func saveEmployeeBtn(_ sender: Any) {
         
+        
+        
         if empType.elementsEqual("FullTime"){
             let empAge = age.text
             let empBonus = txt2.text
             let empSalary = txt1.text
+            if(firstName != nil && lastName != nil && empAge != nil && empBonus != nil && empSalary != nil)
+            {
             let fullTimeEmployee=FullTime(name:(firstName.text!+" "+lastName.text!), age: (empAge?.stringToInt())!,bonus: (empBonus?.stringToFloat())!,salary: (empSalary?.stringToFloat())!,type:empType)
             sinObj.addEmployeeToDictionary(e: fullTimeEmployee)
-            
+            }
+            else{
+                
+                let alert = UIAlertController(title: "Empty Field", message: "Please Fill all th details", preferredStyle: .alert)
+                
+                alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+                
+                self.present(alert, animated: true)
+                
+            }
         }
         if empType.elementsEqual("Intern"){
             let empAge = age.text
+            if(firstName != nil && lastName != nil && empAge != nil)
+            {
             let internEmployee=Intern(name: (firstName.text!+" "+lastName.text!), age: (empAge?.stringToInt())!, schoolName: txt1.text!, type: empType)
             sinObj.addEmployeeToDictionary(e: internEmployee)
+            }
+            else{
+                let alert = UIAlertController(title: "Empty Field", message: "Please Fill all th details", preferredStyle: .alert)
+                
+                alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+                
+                self.present(alert, animated: true)            }
         }
+        
         if empType.elementsEqual("FixedBasedPartTime"){
+            
             let empAge = age.text
             let fixAmt = txt3.text
             let rate = txt1.text
             let hours = txt2.text
-            let fixedBasedEmployee=FixedBasedPartTime(fixedAmount: (fixAmt?.stringToFloat())!, rate: (rate?.stringToFloat())!, hoursWorked: (hours?.stringToFloat())!, name: (firstName.text!+" "+lastName.text!), age: (empAge?.stringToInt())!, type: empType)
+            if(firstName != nil && lastName != nil && empAge != nil && fixAmt != nil && rate != nil && hours != nil)
+            {
+                let fixedBasedEmployee=FixedBasedPartTime(fixedAmount: (fixAmt?.stringToFloat())!, rate: (rate?.stringToFloat())!, hoursWorked: (hours?.stringToFloat())!, name: (firstName.text!+" "+lastName.text!), age: (empAge?.stringToInt())!, type: empType)
             sinObj.addEmployeeToDictionary(e: fixedBasedEmployee)
-            
+            }
+            else{
+                let alert = UIAlertController(title: "Empty Field", message: "Please Fill all th details", preferredStyle: .alert)
+                               
+                               alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+                               
+                               self.present(alert, animated: true)
+            }
+            let stbHome=UIStoryboard(name: "Main", bundle: nil)
+            let HomeVC = stbHome.instantiateViewController(withIdentifier: "HomeVC") as! HomeTableViewController
+            navigationController?.pushViewController(HomeVC, animated: true)
         }
     }
 }
