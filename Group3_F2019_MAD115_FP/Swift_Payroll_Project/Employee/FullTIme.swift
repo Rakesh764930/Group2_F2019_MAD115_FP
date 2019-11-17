@@ -8,8 +8,8 @@
 
 import Foundation
 class FullTime:Employee{
-    private var salary: Float
-    private var bonus:Float
+     var salary: Float
+     var bonus:Float
     var sinObj=Singleton.getInstance()
     
     init(id:Int, name: String, age: Int,bonus:Float,salary: Float,type:String) {
