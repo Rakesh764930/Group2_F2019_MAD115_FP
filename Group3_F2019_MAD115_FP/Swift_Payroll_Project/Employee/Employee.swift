@@ -9,18 +9,18 @@
 import Foundation
 class Employee:IDisplay{
     var name:String
-    var age:Int
+    var dateOfBirth:Int
     var vdict = Dictionary<String, Vehicle>()
     var type: String
     var empId: Int
     //var m1:Motorcycle?
-   
+    
     
     
     init(id:Int,name:String,age:Int,type:String) {
         
         self.name=name
-        self.age=age
+        self.dateOfBirth=age
         self.type=type
         self.empId=id
     }
@@ -37,7 +37,6 @@ class Employee:IDisplay{
     }
     
 
-
 func calcBirthYear() -> Int{
     //Getting Date
     let date = Date()
@@ -45,8 +44,9 @@ func calcBirthYear() -> Int{
     let calender = Calendar.current
     let currYear = calender.component(.year, from: date)
     //returning result
-    return currYear - age
+    return currYear - dateOfBirth
 }
+    
     func calcEarnings() -> Float{
         return 1000.00;
     }
@@ -54,7 +54,7 @@ func calcBirthYear() -> Int{
 func printMyData() {
         print("****************************************************************")
         print("\nName   : \(name)")
-        print("Age    : \(age.ageFormat())")
+        print("Age    : \(dateOfBirth.ageFormat())")
         print("Birth Year : \(calcBirthYear())")
     
     
