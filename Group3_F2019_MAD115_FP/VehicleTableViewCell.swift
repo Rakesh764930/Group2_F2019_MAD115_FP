@@ -1,11 +1,3 @@
-//
-//  VehicleTableViewCell.swift
-//  Group3_F2019_MAD115_FP
-//
-//  Created by MacStudent on 2019-11-16.
-//  Copyright © 2019 MacStudent. All rights reserved.
-//
-
 import UIKit
 
 class VehicleTableViewCell: UITableViewCell {
@@ -15,6 +7,8 @@ class VehicleTableViewCell: UITableViewCell {
     @IBOutlet weak var make: UILabel!
     @IBOutlet weak var brand: UILabel!
     @IBOutlet weak var seats: UILabel!
+    @IBOutlet weak var brandLbl: UILabel!
+    @IBOutlet weak var seatsLbl: UILabel!
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
