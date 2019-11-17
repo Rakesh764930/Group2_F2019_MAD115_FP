@@ -8,7 +8,7 @@
 
 import Foundation
 class Intern:Employee {
-    private var schoolName:String
+     var schoolName:String
     var sinObj=Singleton.getInstance()
     
     init(id:Int,name:String,age:Int,schoolName:String,type:String) {
