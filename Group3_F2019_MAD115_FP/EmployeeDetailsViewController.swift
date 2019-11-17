@@ -20,9 +20,18 @@ class EmployeeDetailsViewController: UIViewController, UITableViewDelegate, UITa
         let e = sinObj.returnEmpObj(empId: Int(indexPath.row+1))
         let cell = tableView.dequeueReusableCell(withIdentifier: "vehicleCell", for: indexPath) as! VehicleTableViewCell
         
-        var vehArray = e?.returnVehicleArray()
+        let vehArray = e?.returnVehicleArray()
         
-        cell.vehicleType = vehArray[indexPath.row]
+        let vehType = vehArray?[indexPath.row].type
+        cell.vehicleType.text = "Employee has a \(String(describing: vehType))"
+        if (vehType?.elementsEqual("Motorcycle"))!{
+            cell.brandLbl.text = "Model"
+            let m = vehArray?[indexPath.row] as! Motorcycle
+            cell.brand.text = m.model
+            cell.make.text = m.make.intToStr()
+            cell.plate.text = m.plate
+            
+        }
         
         return cell
     }
