@@ -20,9 +20,9 @@ class EmployeeDetailsViewController: UIViewController, UITableViewDelegate, UITa
         let e = sinObj.returnEmpObj(empId: Int(indexPath.row+1))
         let cell = tableView.dequeueReusableCell(withIdentifier: "vehicleCell", for: indexPath) as! VehicleTableViewCell
         
-        var vehDic = e?.vdict
+        var vehArray = e?.returnVehicleArray()
         
-        cell.vehicleType =
+        cell.vehicleType = vehArray[indexPath.row]
         
         return cell
     }
