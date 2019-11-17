@@ -11,11 +11,12 @@ class Vehicle: IDisplay
 {
     var make:Int
     var plate:String
-    
+    var type:String
 
     
-    init(make:Int,plate:String)
+    init(make:Int,plate:String,type:String)
     {
+        self.type=type
         self.make=make
         self.plate=plate
     
