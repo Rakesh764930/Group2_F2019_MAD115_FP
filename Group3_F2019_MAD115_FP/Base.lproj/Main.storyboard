@@ -849,9 +849,11 @@
                                         </tableViewCellContentView>
                                         <connections>
                                             <outlet property="brand" destination="k3E-fd-6wx" id="2ve-kn-ctx"/>
+                                            <outlet property="brandLbl" destination="VUX-pj-Omq" id="n33-HL-Did"/>
                                             <outlet property="make" destination="QcI-0y-EPu" id="RnI-Tq-1tE"/>
                                             <outlet property="plate" destination="hJG-aD-HPi" id="1RQ-aT-tzG"/>
                                             <outlet property="seats" destination="g1n-Ce-wCb" id="cSo-Mf-Nr5"/>
+                                            <outlet property="seatsLbl" destination="o94-yF-qMJ" id="TN0-sl-KEH"/>
                                             <outlet property="vehicleType" destination="SzS-3y-3Do" id="aaZ-xr-ceD"/>
                                         </connections>
                                     </tableViewCell>
