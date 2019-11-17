@@ -775,10 +775,10 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="vehicleCell" rowHeight="158" id="tAg-dW-AEI">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="vehicleCell" rowHeight="158" id="tAg-dW-AEI" customClass="VehicleTableViewCell" customModule="Group3_F2019_MAD115_FP" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="374" height="158"/>
                                         <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="tAg-dW-AEI" id="pfh-05-dDv">
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="tAg-dW-AEI" id="pfh-05-dDv" customClass="VehicleTableViewCell" customModule="Group3_F2019_MAD115_FP" customModuleProvider="target">
                                             <rect key="frame" x="0.0" y="0.0" width="374" height="158"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
@@ -847,6 +847,13 @@
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="brand" destination="k3E-fd-6wx" id="2ve-kn-ctx"/>
+                                            <outlet property="make" destination="QcI-0y-EPu" id="RnI-Tq-1tE"/>
+                                            <outlet property="plate" destination="hJG-aD-HPi" id="1RQ-aT-tzG"/>
+                                            <outlet property="seats" destination="g1n-Ce-wCb" id="cSo-Mf-Nr5"/>
+                                            <outlet property="vehicleType" destination="SzS-3y-3Do" id="aaZ-xr-ceD"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
