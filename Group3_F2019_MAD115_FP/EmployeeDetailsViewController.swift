@@ -10,13 +10,21 @@ import UIKit
 
 class EmployeeDetailsViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
-    
+    var sinObj = Singleton.getInstance()
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return (e?.vdict.count)!
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        <#code#>
+        
+        let e = sinObj.returnEmpObj(empId: Int(indexPath.row+1))
+        let cell = tableView.dequeueReusableCell(withIdentifier: "vehicleCell", for: indexPath) as! VehicleTableViewCell
+        
+        var vehDic = e?.vdict
+        
+        cell.vehicleType =
+        
+        return cell
     }
     
 
