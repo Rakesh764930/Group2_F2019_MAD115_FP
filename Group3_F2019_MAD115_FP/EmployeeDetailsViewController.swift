@@ -83,25 +83,24 @@ class EmployeeDetailsViewController: UIViewController, UITableViewDelegate, UITa
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        let e = sinObj.returnEmpObj(empId: Int(indexPath.row+1))
         let cell = tableView.dequeueReusableCell(withIdentifier: "vehicleCell", for: indexPath) as! VehicleTableViewCell
         
-        let vehArray = e?.returnVehicleArray()
+        let vehArray = e!.returnVehicleArray()
         
-        let vehType = vehArray?[indexPath.row].type
+        let vehType = vehArray[indexPath.row].type
         
         cell.vehicleType.text = "Employee has a \(String(describing: vehType))"
         
-        if (vehType?.elementsEqual("Motorcycle"))!{
+        if (vehType.elementsEqual("Motorcycle")){
             cell.brandLbl.text = "Model"
-            let motorCycle = vehArray?[indexPath.row] as! Motorcycle
+            let motorCycle = vehArray[indexPath.row] as! Motorcycle
             cell.brand.text = motorCycle.model
             cell.make.text = motorCycle.make.intToStr()
             cell.plate.text = motorCycle.plate
             
         }
-        if (vehType?.elementsEqual("Car"))!{
-            let car = vehArray?[indexPath.row] as! Car
+        if (vehType.elementsEqual("Car")){
+            let car = vehArray[indexPath.row] as! Car
             cell.brand.text = car.brand
             cell.seats.text = car.numberOfSeats.intToStr()
             cell.make.text = car.make.intToStr()
@@ -112,7 +111,9 @@ class EmployeeDetailsViewController: UIViewController, UITableViewDelegate, UITa
         return cell
     }
     
-
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 200
+    }
     
     
 }
