@@ -69,4 +69,14 @@ func printMyData() {
     }
     print("Employee is a \(type)")
     }
+    
+    func returnVehicleArray() -> Array<Vehicle>
+    {
+        var t : Array<Vehicle> = []
+        for i in vdict.values
+        {
+            t.append(i)
+        }
+        return t
+    }
 }
