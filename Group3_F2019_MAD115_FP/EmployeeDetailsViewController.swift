@@ -46,12 +46,12 @@ class EmployeeDetailsViewController: UIViewController, UITableViewDelegate, UITa
                 lbl1_1.text = f.salary.floatToStr()
                 lbl2.text = "Bonus"
                 lbl2_2.text = f.bonus.floatToStr()
+                
             }
             if e?.type == "Intern"{
             lbl1.text = "School Name"
             let i = e as! Intern
                 lbl1_1.text = i.schoolName
-            
             }
             
             if e?.type == "Fixed Based PartTime"{
