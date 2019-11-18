@@ -943,6 +943,9 @@
                                     <segment title="Car"/>
                                     <segment title="Motorcycle"/>
                                 </segments>
+                                <connections>
+                                    <action selector="vehicleTypeAction:" destination="y2J-g4-Km4" eventType="valueChanged" id="5Ke-Ij-2bY"/>
+                                </connections>
                             </segmentedControl>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="OyE-SM-DrN">
                                 <rect key="frame" x="214" y="106" width="180" height="34"/>
@@ -1007,6 +1010,15 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="gjr-lD-Nyn"/>
                     </view>
+                    <connections>
+                        <outlet property="brandTxt" destination="bgQ-WP-QAw" id="Fxy-p5-sq2"/>
+                        <outlet property="numberOfSeatsTxt" destination="u7z-2W-qu3" id="kcx-xJ-P5Q"/>
+                        <outlet property="vehicleBrand" destination="bgQ-WP-QAw" id="Xgp-7w-pLW"/>
+                        <outlet property="vehicleMake" destination="OyE-SM-DrN" id="5l4-D7-4XY"/>
+                        <outlet property="vehicleNumberOfSeats" destination="u7z-2W-qu3" id="iv3-sZ-6yg"/>
+                        <outlet property="vehiclePlate" destination="AfP-QP-ide" id="hL5-VX-slW"/>
+                        <outlet property="vehicleType" destination="yqD-h5-MAA" id="oSd-du-wVP"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AWf-0A-5GD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

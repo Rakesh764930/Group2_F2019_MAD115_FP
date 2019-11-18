@@ -10,6 +10,13 @@ import UIKit
 
 class AddVehicleViewController: UIViewController {
 
+    @IBOutlet weak var vehicleMake: UITextField!
+    @IBOutlet weak var vehiclePlate: UITextField!
+    @IBOutlet weak var vehicleType: UISegmentedControl!
+    @IBOutlet weak var vehicleBrand: UITextField!
+    @IBOutlet weak var vehicleNumberOfSeats: UITextField!
+    @IBOutlet weak var brandTxt: UITextField!
+    @IBOutlet weak var numberOfSeatsTxt: UITextField!
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -17,5 +24,22 @@ class AddVehicleViewController: UIViewController {
     }
     
 
-   
+    @IBAction func vehicleTypeAction(_ sender: Any) {
+        
+        switch vehicleType.selectedSegmentIndex{
+        case 0:
+            vehicleBrand.isHidden = false
+            vehicleNumberOfSeats.isHidden = false
+            brandTxt.isHidden = false
+            brandTxt.isHidden = false
+        case 1:
+            vehicleBrand.text = ""
+            numberOfSeatsTxt.isHidden = true
+            v
+        default:
+            <#code#>
+        }
+        
+    }
+    
 }
