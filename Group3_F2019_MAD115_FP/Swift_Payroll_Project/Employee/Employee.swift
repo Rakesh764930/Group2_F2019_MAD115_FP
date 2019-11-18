@@ -32,10 +32,13 @@ class Employee:IDisplay{
 //    }
     
     func addVehicle(v:Vehicle) {
+        
         vdict.updateValue(v, forKey: v.plate)
         
     }
-    
+    func removeVeh(plate: String)  {
+        vdict.removeValue(forKey: plate)
+    }
 
 func calcBirthYear() -> Int{
     //Getting Date

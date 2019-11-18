@@ -114,6 +114,14 @@ class EmployeeDetailsViewController: UIViewController, UITableViewDelegate, UITa
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 200
     }
-    
+    @IBAction func addVehicle(_ sender: Any) {
+        
+        let stbAddVeh=UIStoryboard(name: "Main", bundle: nil)
+        let vehicleVC = stbAddVeh.instantiateViewController(withIdentifier: "addVehicle") as! AddVehicleViewController
+        navigationController?.pushViewController(vehicleVC, animated: true)
+        
+        
+    }
+
     
 }

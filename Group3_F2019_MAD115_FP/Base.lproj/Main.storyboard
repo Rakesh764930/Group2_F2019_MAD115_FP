@@ -818,28 +818,28 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hJG-aD-HPi">
-                                                    <rect key="frame" x="166" y="40" width="42" height="21"/>
+                                                    <rect key="frame" x="166" y="40" width="173" height="21"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k3E-fd-6wx">
-                                                    <rect key="frame" x="166" y="98" width="42" height="21"/>
+                                                    <rect key="frame" x="166" y="98" width="173" height="21"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g1n-Ce-wCb">
-                                                    <rect key="frame" x="166" y="127" width="42" height="21"/>
+                                                    <rect key="frame" x="166" y="127" width="173" height="21"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QcI-0y-EPu">
-                                                    <rect key="frame" x="166" y="69" width="42" height="21"/>
+                                                    <rect key="frame" x="166" y="69" width="173" height="21"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
@@ -869,7 +869,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Add Vehicle"/>
                                 <connections>
-                                    <segue destination="y2J-g4-Km4" kind="presentation" id="zx3-Hk-XYG"/>
+                                    <action selector="addVehicle:" destination="2xX-OX-ilo" eventType="touchUpInside" id="Ruc-LS-whu"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Vehicle Details" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AS4-vI-fIf">
@@ -915,9 +915,9 @@
         <!--Add Vehicle View Controller-->
         <scene sceneID="mHZ-CZ-SJk">
             <objects>
-                <viewController id="y2J-g4-Km4" customClass="AddVehicleViewController" customModule="Group3_F2019_MAD115_FP" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="addVehicle" id="y2J-g4-Km4" customClass="AddVehicleViewController" customModule="Group3_F2019_MAD115_FP" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="V9b-hZ-Dg8">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Add Vehicle" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KAv-PY-TWK">
@@ -998,7 +998,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kkK-If-DUH">
-                                <rect key="frame" x="20" y="763" width="374" height="45"/>
+                                <rect key="frame" x="20" y="817" width="374" height="45"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="19"/>
                                 <state key="normal" title="Save"/>
@@ -1014,9 +1014,9 @@
                         <outlet property="brandLabel" destination="66N-go-xCw" id="W9r-qG-KaA"/>
                         <outlet property="brandTxt" destination="bgQ-WP-QAw" id="Fxy-p5-sq2"/>
                         <outlet property="numberOfSeatsLabel" destination="wjn-UE-R4i" id="5tt-Yj-66J"/>
+                        <outlet property="seats" destination="u7z-2W-qu3" id="Iiy-Ln-wqT"/>
                         <outlet property="vehicleBrand" destination="bgQ-WP-QAw" id="Xgp-7w-pLW"/>
                         <outlet property="vehicleMake" destination="OyE-SM-DrN" id="5l4-D7-4XY"/>
-                        <outlet property="vehicleNumberOfSeats" destination="u7z-2W-qu3" id="iv3-sZ-6yg"/>
                         <outlet property="vehiclePlate" destination="AfP-QP-ide" id="hL5-VX-slW"/>
                         <outlet property="vehicleType" destination="yqD-h5-MAA" id="oSd-du-wVP"/>
                     </connections>
