@@ -25,7 +25,7 @@ class AddVehicleViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+       
     }
     
 
@@ -47,6 +47,7 @@ class AddVehicleViewController: UIViewController {
         }
         
     }
+    
 
     @IBAction func addVehcle(_ sender: Any) {
 
