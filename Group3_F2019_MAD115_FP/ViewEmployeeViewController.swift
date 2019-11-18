@@ -20,7 +20,7 @@ class ViewEmployeeViewController: UIViewController, UITableViewDelegate, UITable
           empTable.dataSource = self
           empTable.delegate = self
           sinObj.alreadyEmployee()
-          // Do any additional setup after loading the view.
+         
       }
     
     func numberOfSections(in tableView: UITableView) -> Int {
