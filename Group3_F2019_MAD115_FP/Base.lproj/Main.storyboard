@@ -993,7 +993,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Brand" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="66N-go-xCw">
-                                <rect key="frame" x="56" y="264" width="49" height="22"/>
+                                <rect key="frame" x="56" y="264" width="128" height="22"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <nil key="textColor"/>
@@ -1011,8 +1011,9 @@
                         <viewLayoutGuide key="safeArea" id="gjr-lD-Nyn"/>
                     </view>
                     <connections>
+                        <outlet property="brandLabel" destination="66N-go-xCw" id="W9r-qG-KaA"/>
                         <outlet property="brandTxt" destination="bgQ-WP-QAw" id="Fxy-p5-sq2"/>
-                        <outlet property="numberOfSeatsTxt" destination="u7z-2W-qu3" id="kcx-xJ-P5Q"/>
+                        <outlet property="numberOfSeatsLabel" destination="wjn-UE-R4i" id="5tt-Yj-66J"/>
                         <outlet property="vehicleBrand" destination="bgQ-WP-QAw" id="Xgp-7w-pLW"/>
                         <outlet property="vehicleMake" destination="OyE-SM-DrN" id="5l4-D7-4XY"/>
                         <outlet property="vehicleNumberOfSeats" destination="u7z-2W-qu3" id="iv3-sZ-6yg"/>

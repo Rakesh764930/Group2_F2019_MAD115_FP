@@ -16,7 +16,8 @@ class AddVehicleViewController: UIViewController {
     @IBOutlet weak var vehicleBrand: UITextField!
     @IBOutlet weak var vehicleNumberOfSeats: UITextField!
     @IBOutlet weak var brandTxt: UITextField!
-    @IBOutlet weak var numberOfSeatsTxt: UITextField!
+    @IBOutlet weak var brandLabel: UILabel!
+    @IBOutlet weak var numberOfSeatsLabel: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -31,13 +32,13 @@ class AddVehicleViewController: UIViewController {
             vehicleBrand.isHidden = false
             vehicleNumberOfSeats.isHidden = false
             brandTxt.isHidden = false
-            brandTxt.isHidden = false
+            vehicleNumberOfSeats.isHidden = false
         case 1:
-            vehicleBrand.text = ""
-            numberOfSeatsTxt.isHidden = true
-            v
+            brandLabel.text = "Model"
+            numberOfSeatsLabel.isHidden = true
+            vehicleNumberOfSeats.isHidden = true
         default:
-            <#code#>
+            break
         }
         
     }
