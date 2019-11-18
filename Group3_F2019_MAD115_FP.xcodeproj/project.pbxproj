@@ -29,6 +29,7 @@
 		9B4DD210237F570E00238902 /* IDisplay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B4DD201237F570E00238902 /* IDisplay.swift */; };
 		9B4DD212237F5F8800238902 /* EmployeeDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B4DD211237F5F8800238902 /* EmployeeDetailsViewController.swift */; };
 		9B4DD214237F8F5E00238902 /* StringToInt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B4DD213237F8F5E00238902 /* StringToInt.swift */; };
+		9B4E7BF22383274400F03B95 /* AddVehicleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B4E7BF12383274400F03B95 /* AddVehicleViewController.swift */; };
 		9B4FD165237E435200A055CF /* HomeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B4FD164237E435200A055CF /* HomeTableViewController.swift */; };
 		9B5BB1C2237F4396005F56F9 /* payrollsystem.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9B5BB1C1237F4396005F56F9 /* payrollsystem.jpg */; };
 		9B5BB1C4237F44F1005F56F9 /* emp.png in Resources */ = {isa = PBXBuildFile; fileRef = 9B5BB1C3237F44F1005F56F9 /* emp.png */; };
@@ -80,6 +81,7 @@
 		9B4DD201237F570E00238902 /* IDisplay.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IDisplay.swift; sourceTree = "<group>"; };
 		9B4DD211237F5F8800238902 /* EmployeeDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeDetailsViewController.swift; sourceTree = "<group>"; };
 		9B4DD213237F8F5E00238902 /* StringToInt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringToInt.swift; sourceTree = "<group>"; };
+		9B4E7BF12383274400F03B95 /* AddVehicleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddVehicleViewController.swift; sourceTree = "<group>"; };
 		9B4FD164237E435200A055CF /* HomeTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewController.swift; sourceTree = "<group>"; };
 		9B5BB1C1237F4396005F56F9 /* payrollsystem.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = payrollsystem.jpg; sourceTree = "<group>"; };
 		9B5BB1C3237F44F1005F56F9 /* emp.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = emp.png; sourceTree = "<group>"; };
@@ -221,6 +223,7 @@
 				9B0034392380BAE700CB2E0E /* FloatToStringExtension.swift */,
 				9B00343B2380C2D400CB2E0E /* IntToStringExtension.swift */,
 				9B00343D2380CD1000CB2E0E /* VehicleTableViewCell.swift */,
+				9B4E7BF12383274400F03B95 /* AddVehicleViewController.swift */,
 			);
 			path = Group3_F2019_MAD115_FP;
 			sourceTree = "<group>";
@@ -322,6 +325,7 @@
 				9B4DD206237F570E00238902 /* SalaryExtension.swift in Sources */,
 				9B5D43EF237F2D480052DDFA /* ContactUsViewController.swift in Sources */,
 				9BC21CAD237A240700E3A8F7 /* AppDelegate.swift in Sources */,
+				9B4E7BF22383274400F03B95 /* AddVehicleViewController.swift in Sources */,
 				9B4FD165237E435200A055CF /* HomeTableViewController.swift in Sources */,
 				9B0034382380AD8100CB2E0E /* EmployeeNameTableViewCell.swift in Sources */,
 				9B5D43EB237F2A080052DDFA /* ViewEmployeeViewController.swift in Sources */,
