@@ -13,7 +13,6 @@ class RemoveVehicleViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        
     }
     
 
