@@ -1007,7 +1007,7 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="lightTextColor"/>
                         <viewLayoutGuide key="safeArea" id="gjr-lD-Nyn"/>
                     </view>
                     <connections>
