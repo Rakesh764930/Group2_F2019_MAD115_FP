@@ -31,7 +31,7 @@ class AddEmployeeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        
     }
     var sinObj=Singleton.getInstance()
     var empType:String = ""
