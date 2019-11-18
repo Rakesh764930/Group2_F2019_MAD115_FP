@@ -25,6 +25,7 @@ class AboutUsViewController: UIViewController {
     
     @IBAction func WkButton(_ sender: UIBarButtonItem) {
         
+       
         switch sender.tag {
             case 0:
                 if aboutWK.canGoForward{
