@@ -38,6 +38,7 @@
 		9B5D43EF237F2D480052DDFA /* ContactUsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B5D43EE237F2D480052DDFA /* ContactUsViewController.swift */; };
 		9B5D43F1237F2D630052DDFA /* AboutUsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B5D43F0237F2D630052DDFA /* AboutUsViewController.swift */; };
 		9B5D43F3237F2D760052DDFA /* LogoutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B5D43F2237F2D760052DDFA /* LogoutViewController.swift */; };
+		9B6DE958238348D80076804F /* RemoveVehicleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B6DE957238348D80076804F /* RemoveVehicleViewController.swift */; };
 		9BC21CAD237A240700E3A8F7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BC21CAC237A240700E3A8F7 /* AppDelegate.swift */; };
 		9BC21CAF237A240700E3A8F7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BC21CAE237A240700E3A8F7 /* SceneDelegate.swift */; };
 		9BC21CB1237A240700E3A8F7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BC21CB0237A240700E3A8F7 /* ViewController.swift */; };
@@ -90,6 +91,7 @@
 		9B5D43EE237F2D480052DDFA /* ContactUsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactUsViewController.swift; sourceTree = "<group>"; };
 		9B5D43F0237F2D630052DDFA /* AboutUsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutUsViewController.swift; sourceTree = "<group>"; };
 		9B5D43F2237F2D760052DDFA /* LogoutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoutViewController.swift; sourceTree = "<group>"; };
+		9B6DE957238348D80076804F /* RemoveVehicleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoveVehicleViewController.swift; sourceTree = "<group>"; };
 		9BC21CA9237A240700E3A8F7 /* Group3_F2019_MAD115_FP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Group3_F2019_MAD115_FP.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9BC21CAC237A240700E3A8F7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9BC21CAE237A240700E3A8F7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -224,6 +226,7 @@
 				9B00343D2380CD1000CB2E0E /* VehicleTableViewCell.swift */,
 				9B4E7BF12383274400F03B95 /* AddVehicleViewController.swift */,
 				9B5D43EC237F2CD20052DDFA /* AddEmployeeViewController.swift */,
+				9B6DE957238348D80076804F /* RemoveVehicleViewController.swift */,
 			);
 			path = Group3_F2019_MAD115_FP;
 			sourceTree = "<group>";
@@ -307,6 +310,7 @@
 				9B4DD20B237F570E00238902 /* CommissionBasedPartTime.swift in Sources */,
 				9B4DD203237F570E00238902 /* Vehicle.swift in Sources */,
 				9B4DD214237F8F5E00238902 /* StringToInt.swift in Sources */,
+				9B6DE958238348D80076804F /* RemoveVehicleViewController.swift in Sources */,
 				9B02A0D9237B9A4500BDF44E /* LoginViewController.swift in Sources */,
 				9B4DD212237F5F8800238902 /* EmployeeDetailsViewController.swift in Sources */,
 				9B5D43F1237F2D630052DDFA /* AboutUsViewController.swift in Sources */,
