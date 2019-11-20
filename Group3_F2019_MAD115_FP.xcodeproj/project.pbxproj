@@ -181,6 +181,51 @@
 			path = "JSON File";
 			sourceTree = "<group>";
 		};
+		9BBD40B32384B80200178847 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				9B02A0D8237B9A4500BDF44E /* LoginViewController.swift */,
+				9BC21CB0237A240700E3A8F7 /* ViewController.swift */,
+				9B5D43EA237F2A080052DDFA /* ViewEmployeeViewController.swift */,
+				9B5D43EE237F2D480052DDFA /* ContactUsViewController.swift */,
+				9B5D43F0237F2D630052DDFA /* AboutUsViewController.swift */,
+				9B4E7BF12383274400F03B95 /* AddVehicleViewController.swift */,
+				9B5D43EC237F2CD20052DDFA /* AddEmployeeViewController.swift */,
+				9B6DE957238348D80076804F /* RemoveVehicleViewController.swift */,
+				9B5D43F2237F2D760052DDFA /* LogoutViewController.swift */,
+				9B4DD211237F5F8800238902 /* EmployeeDetailsViewController.swift */,
+				9B4FD164237E435200A055CF /* HomeTableViewController.swift */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		9BBD40B42384B84B00178847 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				9B4DD213237F8F5E00238902 /* StringToInt.swift */,
+				9B0034392380BAE700CB2E0E /* FloatToStringExtension.swift */,
+				9B00343B2380C2D400CB2E0E /* IntToStringExtension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		9BBD40B52384B87000178847 /* Table Cells */ = {
+			isa = PBXGroup;
+			children = (
+				9B0034372380AD8100CB2E0E /* EmployeeNameTableViewCell.swift */,
+				9B00343D2380CD1000CB2E0E /* VehicleTableViewCell.swift */,
+			);
+			path = "Table Cells";
+			sourceTree = "<group>";
+		};
+		9BBD40B62384B8B700178847 /* Singleton */ = {
+			isa = PBXGroup;
+			children = (
+				9B4DD1EC237F547F00238902 /* Singleton.swift */,
+			);
+			path = Singleton;
+			sourceTree = "<group>";
+		};
 		9BC21CA0237A240700E3A8F7 = {
 			isa = PBXGroup;
 			children = (
@@ -202,8 +247,6 @@
 			children = (
 				9BC21CAC237A240700E3A8F7 /* AppDelegate.swift */,
 				9BC21CAE237A240700E3A8F7 /* SceneDelegate.swift */,
-				9B02A0D8237B9A4500BDF44E /* LoginViewController.swift */,
-				9B4FD164237E435200A055CF /* HomeTableViewController.swift */,
 				9BC21CB2237A240700E3A8F7 /* Main.storyboard */,
 				9BC21CB5237A240800E3A8F7 /* Assets.xcassets */,
 				9B5BB1C3237F44F1005F56F9 /* emp.png */,
@@ -211,22 +254,11 @@
 				9BC21CB7237A240800E3A8F7 /* LaunchScreen.storyboard */,
 				9BC21CBA237A240800E3A8F7 /* Info.plist */,
 				9B02A0DC237B9DBB00BDF44E /* eLogin.plist */,
-				9BC21CB0237A240700E3A8F7 /* ViewController.swift */,
-				9B5D43EA237F2A080052DDFA /* ViewEmployeeViewController.swift */,
-				9B5D43EE237F2D480052DDFA /* ContactUsViewController.swift */,
-				9B5D43F0237F2D630052DDFA /* AboutUsViewController.swift */,
-				9B5D43F2237F2D760052DDFA /* LogoutViewController.swift */,
-				9B4DD1EC237F547F00238902 /* Singleton.swift */,
-				9B4DD211237F5F8800238902 /* EmployeeDetailsViewController.swift */,
-				9B4DD213237F8F5E00238902 /* StringToInt.swift */,
+				9BBD40B32384B80200178847 /* View Controllers */,
+				9BBD40B52384B87000178847 /* Table Cells */,
+				9BBD40B62384B8B700178847 /* Singleton */,
+				9BBD40B42384B84B00178847 /* Extensions */,
 				9B4DD1EE237F570E00238902 /* Swift_Payroll_Project */,
-				9B0034372380AD8100CB2E0E /* EmployeeNameTableViewCell.swift */,
-				9B0034392380BAE700CB2E0E /* FloatToStringExtension.swift */,
-				9B00343B2380C2D400CB2E0E /* IntToStringExtension.swift */,
-				9B00343D2380CD1000CB2E0E /* VehicleTableViewCell.swift */,
-				9B4E7BF12383274400F03B95 /* AddVehicleViewController.swift */,
-				9B5D43EC237F2CD20052DDFA /* AddEmployeeViewController.swift */,
-				9B6DE957238348D80076804F /* RemoveVehicleViewController.swift */,
 			);
 			path = Group3_F2019_MAD115_FP;
 			sourceTree = "<group>";
